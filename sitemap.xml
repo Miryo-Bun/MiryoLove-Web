@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright © 2026 Bogdan Melnikov.
+
+MiryoLove is an independent project created by Bogdan Melnikov.
+
+All original source code, project architecture, documentation, and original materials are protected under applicable copyright laws.
+
+Third-party libraries, dependencies, and other external materials remain distributed under their respective licenses.
+-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://miryolove.org/</loc>

@@ -1,3 +1,13 @@
+<!--
+Copyright © 2026 Bogdan Melnikov.
+
+MiryoLove is an independent project created by Bogdan Melnikov.
+
+All original source code, project architecture, documentation, and original materials are protected under applicable copyright laws.
+
+Third-party libraries, dependencies, and other external materials remain distributed under their respective licenses.
+-->
+
 # MiryoLove Web
 
 Static, dependency-free MiryoLove website. The homepage, project pages, and shared RU/EN experience use the local assets in `logos/`.
