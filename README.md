@@ -1,3 +1,5 @@
+# MiryoLove Web
+
 <!--
 Copyright © 2026 Bogdan Melnikov.
 
@@ -7,8 +9,6 @@ All original source code, project architecture, documentation, and original mate
 
 Third-party libraries, dependencies, and other external materials remain distributed under their respective licenses.
 -->
-
-# MiryoLove Web
 
 Static, dependency-free MiryoLove website. The homepage, project pages, and shared RU/EN experience use the local assets in `logos/`.
 
