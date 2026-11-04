@@ -16,7 +16,6 @@ Static, dependency-free MiryoLove website. The homepage, project pages, and shar
 
 - `index.html` — MiryoLove homepage and project directory.
 - `projects/miryolove-ai.html`
-- `projects/miryowiki.html`
 - `projects/miryoboard.html`
 - `projects/miryolove-server.html`
 - `projects/git-service.html`
@@ -25,7 +24,7 @@ Static, dependency-free MiryoLove website. The homepage, project pages, and shar
 - `changelog.html` — confirmed website changes; entries without verified dates are undated.
 - `philosophy.html` — MiryoLove values and approach in Russian and English.
 
-Project and legal page content, translations, and the consent interface are kept in `script.js`; shared layout and responsive styles are in `styles.css`. The MiryoWiki interface preview is `logos/MiryoWiki-interface.png`.
+Project and legal page content, translations, and the informational cookie notice are kept in `script.js`; shared layout and responsive styles are in `styles.css`.
 
 ## Run locally
 
@@ -37,6 +36,6 @@ python3 -m http.server 8000
 
 Then open <http://localhost:8000>. The site can also be hosted as static files at the domain root.
 
-The interface defaults to Russian and stores the selected Russian or English language in local storage, including when navigating between pages. The privacy control stores only the user's category choices in local storage; the site does not set HTTP cookies or load analytics, advertising, or tracking scripts. Optional consent categories do not activate any integrations because none are currently present. Project URLs are shown as unverified unless their availability has been confirmed.
+The interface defaults to English and stores the selected Russian or English language in local storage, including when navigating between pages. A bilingual, informational cookie notice remembers dismissal only for the current tab session; it does not ask for or record consent. The site does not set HTTP cookies or load analytics, advertising, or tracking scripts. See `cookies.html` and `docs/` for the cookie policy and the dated technical audit. Project URLs are shown as unverified unless their availability has been confirmed.
 
 Before public launch, the owner should confirm the hosting provider's access logs and retention practices, and publish an official privacy contact. The legal pages explicitly identify these unknowns rather than guessing.
