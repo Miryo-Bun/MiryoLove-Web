@@ -2387,23 +2387,6 @@ html::after {
   min-width: 0;
 }
 
-.footer-settings-link {
-  padding: 0;
-  border: 0;
-  background: transparent;
-  color: var(--color-text-soft);
-  cursor: pointer;
-  font: inherit;
-  font-size: 11px;
-  line-height: 1.5;
-  text-align: left;
-  transition: color 180ms ease;
-}
-
-.footer-settings-link:hover {
-  color: var(--color-brand-strong);
-}
-
 .privacy-consent-banner {
   position: fixed;
   z-index: 40;
@@ -2839,9 +2822,7 @@ html::after {
 }
 
 @supports (backdrop-filter: blur(12px)) {
-  .privacy-consent-banner,
-  .privacy-settings-dialog,
-  .consent-category,
+  .cookie-notice,
   .legal-content {
     background: rgb(255 253 255 / 90%);
     backdrop-filter: blur(18px) saturate(125%);
@@ -3283,5 +3264,143 @@ html::after {
 
   .roadmap-card-heading h2 {
     font-size: 18px;
+  }
+}
+
+.cookie-notice {
+  position: fixed;
+  z-index: 40;
+  right: max(20px, calc((100vw - 1080px) / 2));
+  bottom: 20px;
+  left: max(20px, calc((100vw - 1080px) / 2));
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px 30px;
+  padding: 20px 23px;
+  border: 1px solid rgb(226 216 237 / 95%);
+  border-radius: 21px;
+  background: #fffafd;
+  box-shadow: 0 18px 60px rgb(34 29 62 / 19%), 0 0 30px rgb(255 191 220 / 17%);
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.cookie-notice[hidden] {
+  display: none;
+}
+
+.cookie-notice.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cookie-notice-copy {
+  min-width: 0;
+}
+
+.cookie-notice-copy h2 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 18px;
+  font-weight: 740;
+  letter-spacing: -0.035em;
+  line-height: 1.3;
+}
+
+.cookie-notice-copy p {
+  max-width: 760px;
+  margin: 7px 0 0;
+  color: #505b74;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.cookie-notice-copy a {
+  display: inline-block;
+  margin-top: 9px;
+  color: #a92360;
+  font-size: 12px;
+  font-weight: 680;
+  text-decoration: underline;
+  text-decoration-color: rgb(169 35 96 / 35%);
+  text-underline-offset: 3px;
+}
+
+.cookie-notice-copy a:hover {
+  text-decoration-color: currentColor;
+}
+
+.cookie-notice-button {
+  min-width: 112px;
+  min-height: 44px;
+  padding: 9px 16px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: #bd286b;
+  box-shadow: 0 7px 18px rgb(172 34 96 / 20%);
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 720;
+  line-height: 1.35;
+  transition: transform 170ms ease, box-shadow 170ms ease, background 170ms ease;
+}
+
+.cookie-notice-button:hover {
+  transform: translateY(-1px);
+  background: #a91f5d;
+  box-shadow: 0 9px 22px rgb(172 34 96 / 27%);
+}
+
+.cookie-notice-button:focus-visible,
+.cookie-notice-copy a:focus-visible {
+  outline: 3px solid rgb(189 40 107 / 45%);
+  outline-offset: 3px;
+}
+
+@supports (backdrop-filter: blur(12px)) {
+  .cookie-notice {
+    background: rgb(255 253 255 / 90%);
+    backdrop-filter: blur(18px) saturate(125%);
+    -webkit-backdrop-filter: blur(18px) saturate(125%);
+  }
+}
+
+@media (max-width: 780px) {
+  .cookie-notice {
+    right: 14px;
+    bottom: 14px;
+    left: 14px;
+    gap: 13px 20px;
+    padding: 17px;
+  }
+}
+
+@media (max-width: 560px) {
+  .cookie-notice {
+    right: 9px;
+    bottom: 9px;
+    left: 9px;
+    max-height: min(82dvh, 620px);
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 15px;
+    overflow-y: auto;
+    border-radius: 19px;
+  }
+
+  .cookie-notice-copy h2 {
+    font-size: 16px;
+  }
+
+  .cookie-notice-copy p {
+    font-size: 11px;
+  }
+
+  .cookie-notice-button {
+    width: 100%;
   }
 }

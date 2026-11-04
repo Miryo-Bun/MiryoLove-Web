@@ -24,7 +24,6 @@ const translations = {
     github: "GitHub",
     altMiryoLove: "Логотип MiryoLove",
     altAiLogo: "Логотип MiryoLove AI",
-    altWikiLogo: "Логотип MiryoWiki",
     altBoardLogo: "Логотип MiryoBoard",
     altServerLogo: "Логотип MiryoLove Server",
     heroEyebrow: "Независимый технологический проект",
@@ -45,7 +44,6 @@ const translations = {
     filterAvailable: "Доступно",
     learnMore: "Подробнее",
     projectDetails: "Подробнее",
-    openWiki: "Открыть MiryoWiki",
     openAi: "Открыть MiryoLove AI",
     openBoard: "Открыть MiryoBoard",
     openArrow: "Открыть",
@@ -59,10 +57,9 @@ const translations = {
     aiStatusAvailable: "Доступна",
     serverStatusAvailable: "Доступен",
     aiDescription: "Независимый проект в области искусственного интеллекта и разработки собственного AI-ассистента.",
-    wikiDescription: "Информационная энциклопедия на базе MediaWiki о программировании, операционных системах, ПО и искусственном интеллекте.",
     boardDescription: "Независимая анонимная имиджборда MiryoBoard находится в разработке.",
     serverDescription: "Внутренняя серверная инфраструктура и backend-компоненты для проектов MiryoLove.",
-    statusNote: "Доступность подтверждена для MiryoWiki; доступность остальных внешних адресов не подтверждена.",
+    statusNote: "Доступность внешних адресов не подтверждена.",
     aboutStickerOne: "Открытость",
     aboutStickerTwo: "Для людей",
     aboutEyebrow: "Зачем мы это делаем",
@@ -132,43 +129,19 @@ const translations = {
     resourceBreadcrumb: "Разделы MiryoLove",
     footerRights: "Создано с заботой о технологиях и людях.",
     footerCopyright: "© 2026 Мельников Богдан. Все права защищены.",
-    consentEyebrow: "Ваш выбор",
     privacyLinksTitle: "Документы",
     privacyPolicyLink: "Конфиденциальность",
     cookiesPolicyLink: "Политика cookies",
     termsLink: "Условия использования",
-    privacySettingsLink: "Настройки конфиденциальности",
-    consentTitle: "Ваш выбор — ваша конфиденциальность",
-    consentSummary: "Сайт использует локальное хранилище только для выбранного языка и сохранения этого решения. Аналитические и маркетинговые технологии сейчас не используются.",
-    consentPrivacyLink: "Политика конфиденциальности",
-    consentCookiesLink: "Политика cookies",
-    acceptAll: "Принять все",
-    rejectOptional: "Отклонить необязательные",
-    customize: "Настроить",
-    consentDialogTitle: "Настройки конфиденциальности",
-    consentDialogIntro: "Выберите, какие необязательные технологии разрешить. Сейчас сайт не использует аналитику или маркетинговые технологии.",
-    consentNecessaryTitle: "Необходимые",
-    consentNecessaryDescription: "Хранят ваше решение о согласии и выбранный язык сайта. Необходимы для запрошенных вами функций и не используются для отслеживания.",
-    consentPreferencesTitle: "Предпочтения",
-    consentPreferencesDescription: "Сохраняют дополнительные настройки интерфейса. Отдельные технологии этой категории сейчас не используются.",
-    consentAnalyticsTitle: "Аналитика",
-    consentAnalyticsDescription: "Могла бы помогать понимать использование сайта. Сейчас аналитические инструменты не подключены.",
-    consentMarketingTitle: "Маркетинг",
-    consentMarketingDescription: "Могла бы использоваться для рекламы или отслеживания. Маркетинговые и рекламные технологии не подключены.",
-    consentAlwaysOn: "Всегда включены",
-    consentNecessaryToggle: "Необходимые технологии включены постоянно",
-    consentPreferencesToggle: "Разрешить технологии предпочтений",
-    consentAnalyticsToggle: "Разрешить аналитические технологии",
-    consentMarketingToggle: "Разрешить маркетинговые технологии",
-    saveConsent: "Сохранить выбор",
-    consentStorageError: "Не удалось сохранить выбор в этом браузере. Настройки не применены; проверьте доступность локального хранилища и повторите попытку.",
-    consentStorageErrorShort: "Не удалось сохранить выбор в браузере. Проверьте настройки хранилища и повторите попытку.",
-    consentDialogClose: "Закрыть настройки конфиденциальности",
+    cookieNoticeTitle: "Использование файлов cookie",
+    cookieNoticeText: "MiryoLove Web не устанавливает HTTP-файлы cookie и не использует необязательные cookies, рекламные трекеры или аналитику. В браузере сохраняются выбранный язык сайта и закрытие этого уведомления в рамках сессии вкладки. Подробнее — в политике использования cookies.",
+    cookieNoticeLink: "Политика использования cookies",
+    cookieNoticeDismiss: "Понятно",
     privacyPageTitle: "Конфиденциальность",
     cookiesPageTitle: "Политика cookies",
     termsPageTitle: "Условия использования",
     legalIntro: "Эта информация описывает фактическое поведение статического сайта MiryoLove Web. Это не юридическое заключение.",
-    legalUpdated: "Обновлено: 1 ноября 2026 года.",
+    legalUpdated: "Обновлено: 4 ноября 2026 года.",
     backToSite: "Вернуться на сайт",
     backToTop: "Наверх",
     backToProjects: "К списку проектов",
@@ -191,7 +164,6 @@ const translations = {
     github: "GitHub",
     altMiryoLove: "MiryoLove logo",
     altAiLogo: "MiryoLove AI logo",
-    altWikiLogo: "MiryoWiki logo",
     altBoardLogo: "MiryoBoard logo",
     altServerLogo: "MiryoLove Server logo",
     heroEyebrow: "Independent technology project",
@@ -212,7 +184,6 @@ const translations = {
     filterAvailable: "Available",
     learnMore: "Learn more",
     projectDetails: "Details",
-    openWiki: "Open MiryoWiki",
     openAi: "Open MiryoLove AI",
     openBoard: "Open MiryoBoard",
     openArrow: "Open",
@@ -226,10 +197,9 @@ const translations = {
     aiStatusAvailable: "Available",
     serverStatusAvailable: "Available",
     aiDescription: "An independent artificial intelligence project focused on developing its own AI assistant.",
-    wikiDescription: "An information encyclopedia based on MediaWiki covering programming, operating systems, software, and artificial intelligence.",
     boardDescription: "MiryoBoard is an independent anonymous imageboard in development.",
     serverDescription: "Internal server infrastructure and backend components supporting MiryoLove projects.",
-    statusNote: "MiryoWiki availability is confirmed; availability of other external addresses has not been confirmed.",
+    statusNote: "Availability of external addresses has not been confirmed.",
     aboutStickerOne: "Open by design",
     aboutStickerTwo: "Made for people",
     aboutEyebrow: "Why we do this",
@@ -299,43 +269,19 @@ const translations = {
     resourceBreadcrumb: "MiryoLove sections",
     footerRights: "Made with care for technology and people.",
     footerCopyright: "© 2026 Melnikov Bogdan. All rights reserved.",
-    consentEyebrow: "Your choice",
     privacyLinksTitle: "Policies",
     privacyPolicyLink: "Privacy",
     cookiesPolicyLink: "Cookie policy",
     termsLink: "Terms of use",
-    privacySettingsLink: "Privacy settings",
-    consentTitle: "Your choice, your privacy",
-    consentSummary: "This site uses local storage only for your selected language and to remember this choice. Analytics and marketing technologies are not currently used.",
-    consentPrivacyLink: "Privacy policy",
-    consentCookiesLink: "Cookie policy",
-    acceptAll: "Accept all",
-    rejectOptional: "Reject optional",
-    customize: "Customize",
-    consentDialogTitle: "Privacy settings",
-    consentDialogIntro: "Choose whether to allow optional technologies. This site currently does not use analytics or marketing technologies.",
-    consentNecessaryTitle: "Necessary",
-    consentNecessaryDescription: "Stores your consent choice and selected site language. These support functions you requested and are not used for tracking.",
-    consentPreferencesTitle: "Preferences",
-    consentPreferencesDescription: "Would store additional interface settings. No separate technologies in this category are currently used.",
-    consentAnalyticsTitle: "Analytics",
-    consentAnalyticsDescription: "Could help understand how the site is used. No analytics tools are currently connected.",
-    consentMarketingTitle: "Marketing",
-    consentMarketingDescription: "Could be used for advertising or tracking. No marketing or advertising technologies are connected.",
-    consentAlwaysOn: "Always on",
-    consentNecessaryToggle: "Necessary technologies are always enabled",
-    consentPreferencesToggle: "Allow preference technologies",
-    consentAnalyticsToggle: "Allow analytics technologies",
-    consentMarketingToggle: "Allow marketing technologies",
-    saveConsent: "Save my choices",
-    consentStorageError: "This browser could not save your choice. Settings have not been applied; check local storage availability and try again.",
-    consentStorageErrorShort: "Your choice could not be saved. Check browser storage settings and try again.",
-    consentDialogClose: "Close privacy settings",
+    cookieNoticeTitle: "Cookie Usage",
+    cookieNoticeText: "MiryoLove Web does not set HTTP cookies or use optional cookies, advertising trackers, or analytics. Your selected site language and dismissal of this notice for the current tab session are stored in your browser. Learn more in our Cookie Policy.",
+    cookieNoticeLink: "Cookie Policy",
+    cookieNoticeDismiss: "Got it",
     privacyPageTitle: "Privacy",
     cookiesPageTitle: "Cookie policy",
     termsPageTitle: "Terms of use",
     legalIntro: "This page describes the actual behavior of the static MiryoLove Web site. It is not legal advice.",
-    legalUpdated: "Updated: November 1, 2026.",
+    legalUpdated: "Updated: November 4, 2026.",
     backToSite: "Back to the site",
     backToTop: "Back to top",
     backToProjects: "Back to projects",
@@ -349,7 +295,7 @@ const legalPages = {
   ru: {
     privacy: {
       title: "Политика конфиденциальности",
-      description: "Какие данные обрабатывает статический сайт MiryoLove Web и как управлять настройками конфиденциальности.",
+      description: "Какие данные обрабатывает статический сайт MiryoLove Web и как управлять сохранёнными настройками браузера.",
       sections: [
         {
           title: "Коротко о сайте",
@@ -361,8 +307,8 @@ const legalPages = {
         {
           title: "Данные в браузере",
           paragraphs: [
-            "В локальном хранилище браузера сайт сохраняет выбранный язык (ключ miryolove-language) и необходимые настройки согласия (ключ miryolove-consent-v1). Эти записи нужны для сохранения вашего выбора между страницами. Они не содержат идентификатора посетителя, не используются для аналитики и не отправляются сайтом на сервер.",
-            "Записи остаются в браузере до их удаления пользователем или очистки данных сайта. Сайт не устанавливает HTTP-cookie."
+            "В localStorage сайт сохраняет выбранный язык интерфейса (ключ miryolove-language) до очистки данных сайта. В sessionStorage сохраняется только закрытие информационного уведомления о cookies (ключ miryolove-cookie-notice-dismissed-v1) до окончания сессии вкладки. Эти значения не содержат идентификатора посетителя и не отправляются сайтом на сервер.",
+            "Сайт не устанавливает HTTP-cookie. Для самого сайта данные localStorage и sessionStorage не обязательны: без них язык по умолчанию — английский, а уведомление показывается снова."
           ]
         },
         {
@@ -373,10 +319,10 @@ const legalPages = {
           ]
         },
         {
-          title: "Согласие и настройки",
+          title: "Уведомление и настройки",
           paragraphs: [
-            "Необязательные категории предпочтений, аналитики и маркетинга по умолчанию выключены. Сейчас сайт не подключает технологии этих категорий. Вы можете принять все категории, отклонить необязательные или настроить выбор отдельно; сохранение выбора не включает отсутствующие интеграции.",
-            "Откройте «Настройки конфиденциальности» в подвале, чтобы изменить или отозвать необязательное согласие. Вы также можете удалить записи MiryoLove Web в настройках браузера."
+            "Уведомление носит информационный характер. Кнопка «Понятно» закрывает его, но не является согласием на необязательную обработку данных. Аналитические и рекламные технологии не подключены.",
+            "Удалить выбранный язык можно, очистив данные сайта в настройках браузера. Закрытие уведомления действует только в текущей сессии вкладки; в новой сессии оно появится снова."
           ]
         },
         {
@@ -389,34 +335,53 @@ const legalPages = {
     },
     cookies: {
       title: "Политика использования cookies",
-      description: "Фактическое использование cookies и локального хранилища сайтом MiryoLove Web.",
+      description: "Какие cookies и другие технологии хранения использует MiryoLove Web, зачем и как долго.",
       sections: [
+        {
+          title: "Что такое cookies",
+          paragraphs: [
+            "Cookies (файлы cookie) — небольшие данные, которые сайт может попросить браузер сохранить и затем передавать этому сайту в HTTP-запросах. localStorage и sessionStorage — отдельные механизмы веб-хранилища; они не являются cookies и автоматически не отправляются в HTTP-запросах."
+          ]
+        },
         {
           title: "HTTP-cookie",
           paragraphs: [
-            "Страницы MiryoLove Web не устанавливают HTTP-cookie и не используют рекламные или аналитические идентификаторы."
+            "Проверенные исходный код и ответы публичных страниц MiryoLove Web не содержат установки HTTP-cookie: при проверке ответов главной страницы, JavaScript-файла и этой политики заголовок Set-Cookie не обнаружен. Код сайта не обращается к document.cookie. Результат относится к проверенным страницам и моменту аудита; конфигурацию сервера и ответы иных маршрутов следует перепроверять после изменений.",
+            "Необязательные cookies и другие технологии отслеживания, для которых требовался бы выбор пользователя, не используются. Поэтому уведомление носит информационный характер, а кнопка «Понятно» не является согласием."
           ]
         },
         {
-          title: "Локальное хранилище браузера",
+          title: "Другие технологии хранения",
           paragraphs: [
-            "Вместо cookies сайт использует localStorage для двух ограниченных функций. Эти значения не отправляются с сетевыми запросами сайта."
+            "Сайт не использует IndexedDB, Service Worker или другие API хранения, обнаруженные аудитом. Значения localStorage и sessionStorage доступны только в браузере этого сайта и не передаются автоматически с сетевыми запросами."
           ],
           items: [
-            "<code>miryolove-language</code> — сохранённый язык интерфейса RU или EN, выбранный пользователем. Хранится до очистки данных сайта; срок истечения отдельно не задан.",
-            "<code>miryolove-consent-v1</code> — необходимые флаги категорий согласия, выбранные пользователем. Хранится до изменения выбора или очистки данных сайта; срок истечения отдельно не задан."
+            "<code>localStorage</code>, ключ <code>miryolove-language</code> — выбранный язык RU или EN, используется для отображения интерфейса на следующих страницах и посещениях. Хранится до удаления пользователем или очистки данных сайта; отдельный срок истечения не задан.",
+            "<code>sessionStorage</code>, ключ <code>miryolove-cookie-notice-dismissed-v1</code> — отметка о закрытии информационного уведомления, значение <code>1</code>. Используется только для того, чтобы не показывать уведомление повторно в той же сессии вкладки; удаляется браузером при завершении сессии вкладки."
           ]
         },
         {
-          title: "Категории согласия",
+          title: "Сторонние и аналитические cookies",
           paragraphs: [
-            "Необходимое хранилище используется для языка и решения о согласии. Отдельные технологии предпочтений сейчас не используются. Аналитика и маркетинговые технологии не подключены. Кнопка «Принять все» только сохраняет ваше решение и не загружает отсутствующие инструменты."
+            "Сайт не подключает сторонние cookies, рекламные трекеры или аналитические системы. Внешние ресурсы не встроены в страницы. Обычные ссылки на сторонние сайты могут открыть их сервис только после вашего перехода; на них распространяются политики соответствующих владельцев."
           ]
         },
         {
-          title: "Управление выбором",
+          title: "Как управлять данными",
           paragraphs: [
-            "Настройки можно изменить или отозвать в любое время по ссылке «Настройки конфиденциальности» в подвале. Можно также удалить данные сайта в браузере. После удаления сохранённых записей сайт снова покажет запрос согласия."
+            "Удалите localStorage и sessionStorage MiryoLove Web или очистите данные сайта в настройках браузера. После удаления выбранного языка сайт использует английский по умолчанию; после удаления отметки уведомление может появиться снова. Настройки cookies браузера доступны отдельно, хотя сайт не устанавливает HTTP-cookie."
+          ]
+        },
+        {
+          title: "Вопросы о конфиденциальности",
+          paragraphs: [
+            "Публичный адрес электронной почты или иной официальный контакт для вопросов о конфиденциальности в материалах проекта не указан. Не подменяя его сторонним сервисом или неподтверждённым адресом, владелец проекта должен опубликовать действующий контакт для таких обращений."
+          ]
+        },
+        {
+          title: "Правовая информация",
+          paragraphs: [
+            "Эта страница описывает технические наблюдения, а не юридическое заключение. Применимость Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных» и иных требований зависит, в частности, от фактически обрабатываемых данных, целей, оператора, инфраструктуры и действий хостинг-провайдера; эти обстоятельства требуют отдельной проверки."
           ]
         }
       ]
@@ -456,7 +421,7 @@ const legalPages = {
   en: {
     privacy: {
       title: "Privacy policy",
-      description: "What data the static MiryoLove Web site processes and how to manage privacy settings.",
+      description: "What data the static MiryoLove Web site processes and how to manage browser storage.",
       sections: [
         {
           title: "About this site",
@@ -468,8 +433,8 @@ const legalPages = {
         {
           title: "Data in your browser",
           paragraphs: [
-            "The site stores your selected language (the miryolove-language key) and necessary consent settings (the miryolove-consent-v1 key) in browser local storage. These entries preserve your choices between pages. They do not contain a visitor identifier, are not used for analytics, and are not sent to a server by the site.",
-            "Entries remain in your browser until you remove them or clear this site's data. The site does not set HTTP cookies."
+            "The site stores your selected interface language in localStorage (the miryolove-language key) until site data is cleared. sessionStorage stores only whether you dismissed the cookie information notice (the miryolove-cookie-notice-dismissed-v1 key), until that tab's session ends. These values do not contain a visitor identifier and are not sent to a server by the site.",
+            "The site does not set HTTP cookies. Neither storage mechanism is required for the site itself: without stored values, English is the default language and the notice is shown again."
           ]
         },
         {
@@ -480,10 +445,10 @@ const legalPages = {
           ]
         },
         {
-          title: "Consent and settings",
+          title: "Notice and settings",
           paragraphs: [
-            "Optional preferences, analytics, and marketing categories are off by default. The site currently does not connect technologies in those categories. You may accept all categories, reject optional ones, or choose them individually; saving a choice does not activate integrations that are not present.",
-            "Use the Privacy settings link in the footer to change or withdraw optional consent. You can also remove MiryoLove Web entries in your browser settings."
+            "The cookie notice is informational. Its Got it button dismisses the notice and is not consent to optional data processing. No analytics or advertising technologies are connected.",
+            "Clear this site's browser data to remove the saved language. Dismissing the notice lasts only for the current tab session; it appears again in a new session."
           ]
         },
         {
@@ -496,34 +461,53 @@ const legalPages = {
     },
     cookies: {
       title: "Cookie policy",
-      description: "The actual use of cookies and browser local storage by MiryoLove Web.",
+      description: "Which cookies and other storage technologies MiryoLove Web uses, why, and for how long.",
       sections: [
+        {
+          title: "What cookies are",
+          paragraphs: [
+            "Cookies are small pieces of data that a website can ask a browser to store and then send back to that website in HTTP requests. localStorage and sessionStorage are separate browser storage mechanisms; they are not cookies and are not automatically sent with HTTP requests."
+          ]
+        },
         {
           title: "HTTP cookies",
           paragraphs: [
-            "MiryoLove Web pages do not set HTTP cookies or use advertising or analytics identifiers."
+            "The reviewed source code and public MiryoLove Web responses did not show HTTP cookie setting: no Set-Cookie header was found on the homepage, JavaScript file, or this policy page at the time of review. The site code does not access document.cookie. This result applies to the checked pages and audit date; server configuration and other routes should be rechecked after changes.",
+            "No optional cookies or other tracking technologies requiring user choice are used. The notice is informational, and the Got it button is not consent."
           ]
         },
         {
-          title: "Browser local storage",
+          title: "Other storage technologies",
           paragraphs: [
-            "Instead of cookies, the site uses localStorage for two limited functions. These values are not sent with the site's network requests."
+            "The site does not use IndexedDB, a Service Worker, or other storage APIs found in the audit. localStorage and sessionStorage values remain in this site's browser context and are not automatically sent with network requests."
           ],
           items: [
-            "<code>miryolove-language</code> — the user-selected RU or EN interface language. It remains until site data is cleared; no separate expiration is set.",
-            "<code>miryolove-consent-v1</code> — necessary consent-category flags chosen by the user. It remains until the choice changes or site data is cleared; no separate expiration is set."
+            "<code>localStorage</code>, key <code>miryolove-language</code> — the selected RU or EN interface language, used to display the interface on subsequent pages and visits. It remains until removed by the user or site data is cleared; no separate expiration is set.",
+            "<code>sessionStorage</code>, key <code>miryolove-cookie-notice-dismissed-v1</code> — the value <code>1</code> records dismissal of the informational notice. It prevents the notice from reappearing only during the same tab session and is removed by the browser when that session ends."
           ]
         },
         {
-          title: "Consent categories",
+          title: "Third-party and analytics cookies",
           paragraphs: [
-            "Necessary storage supports the language and consent choice. No separate preference technologies are currently used. Analytics and marketing technologies are not connected. The Accept all button only records your choice; it does not load tools that are not present."
+            "The site does not connect third-party cookies, advertising trackers, or analytics systems. External resources are not embedded in its pages. Ordinary links to external sites may connect to those services only after you follow a link; their owners' policies then apply."
           ]
         },
         {
-          title: "Managing your choice",
+          title: "Managing browser storage",
           paragraphs: [
-            "You can change or withdraw your choice at any time using Privacy settings in the footer. You can also clear this site's data in your browser. After saved entries are removed, the site will ask for a choice again."
+            "Remove MiryoLove Web's localStorage and sessionStorage entries or clear this site's data in your browser settings. Without a saved language the site defaults to English; after the notice dismissal entry is removed, the notice may appear again. Browser cookie controls are separate, although this site does not set HTTP cookies."
+          ]
+        },
+        {
+          title: "Privacy contact",
+          paragraphs: [
+            "The project materials do not identify a public email address or other official contact for privacy questions. Rather than inventing or substituting a third-party service, the project owner should publish a working contact for such requests."
+          ]
+        },
+        {
+          title: "Legal information",
+          paragraphs: [
+            "This page records technical observations and is not legal advice. Whether Federal Law No. 152-FZ of 27 July 2006 on Personal Data and other requirements apply depends, among other things, on the data actually processed, purposes, operator, infrastructure, and hosting provider practices; these matters need separate review."
           ]
         }
       ]
@@ -591,37 +575,6 @@ const projectPages = {
       logo: "miryolove-ai.jpg",
       logoAlt: "Логотип проекта MiryoLove AI",
       screenshot: null
-    },
-    wiki: {
-      title: "MiryoWiki",
-      metaTitle: "MiryoWiki — техническая энциклопедия | MiryoLove",
-      metaDescription: "MiryoWiki — самостоятельный проект технической энциклопедии о программировании, системах, программном обеспечении и ИИ.",
-      eyebrow: "Техническая энциклопедия",
-      tagline: "Открытые знания, собранные в одном месте.",
-      intro: "MiryoWiki — самостоятельный проект экосистемы MiryoLove для изучения опубликованных материалов, поиска справочной информации и совместной работы над энциклопедическими статьями.",
-      detailsTitle: "Знания, которыми можно делиться",
-      details: [
-        "Тематика включает программирование, операционные системы, программное обеспечение, искусственный интеллект и другие технические области.",
-        "В материалах проекта обозначены принципы проверяемости, нейтрального изложения, открытости знаний и совместного развития. Скриншот ниже показывает главную страницу MiryoWiki."
-      ],
-      featuresTitle: "Как устроена энциклопедия",
-      features: [
-        ["Технические темы", "Справочные и образовательные материалы о технологиях и программном обеспечении."],
-        ["Проверяемость", "Материалы ориентированы на подтверждение сведений источниками, когда это возможно."],
-        ["Совместная работа", "Развитие статей предполагает участие сообщества в соответствии с правилами проекта."]
-      ],
-      status: "available",
-      statusNote: "Сервис MiryoWiki доступен по указанному адресу.",
-      address: "https://wiki.miryolove.org/",
-      addressLabel: "Адрес MiryoWiki",
-      action: { key: "openWiki", disabled: false },
-      logo: "MiryoWiki.jpg",
-      logoAlt: "Логотип технической энциклопедии MiryoWiki",
-      screenshot: {
-        src: "MiryoWiki-interface.png",
-        alt: "Скриншот главной страницы MiryoWiki: боковая навигация, приветственный блок, разделы энциклопедии и таблицы принципов и документов.",
-        caption: "Главная страница MiryoWiki: навигация, описание энциклопедии и материалы о принципах и документах проекта."
-      }
     },
     board: {
       title: "MiryoBoard",
@@ -733,37 +686,6 @@ const projectPages = {
       logoAlt: "MiryoLove AI project logo",
       screenshot: null
     },
-    wiki: {
-      title: "MiryoWiki",
-      metaTitle: "MiryoWiki — technical encyclopedia | MiryoLove",
-      metaDescription: "MiryoWiki is a standalone technical encyclopedia project covering programming, systems, software, and AI.",
-      eyebrow: "Technical encyclopedia",
-      tagline: "Open knowledge, brought together.",
-      intro: "MiryoWiki is a standalone MiryoLove ecosystem project for exploring published materials, finding reference information, and collaborating on encyclopedia articles.",
-      detailsTitle: "Knowledge worth sharing",
-      details: [
-        "Topics include programming, operating systems, software, artificial intelligence, and other technical fields.",
-        "The project materials identify verifiability, neutral presentation, open knowledge, and collaborative development as principles. The screenshot below shows the MiryoWiki homepage."
-      ],
-      featuresTitle: "How the encyclopedia is organized",
-      features: [
-        ["Technical topics", "Reference and educational materials about technology and software."],
-        ["Verifiability", "Materials are intended to support claims with sources where possible."],
-        ["Collaborative work", "Articles can be developed collaboratively in line with project rules."]
-      ],
-      status: "available",
-      statusNote: "MiryoWiki is available at the listed address.",
-      address: "https://wiki.miryolove.org/",
-      addressLabel: "MiryoWiki address",
-      action: { key: "openWiki", disabled: false },
-      logo: "MiryoWiki.jpg",
-      logoAlt: "MiryoWiki technical encyclopedia logo",
-      screenshot: {
-        src: "MiryoWiki-interface.png",
-        alt: "Screenshot of the MiryoWiki homepage showing sidebar navigation, a welcome panel, encyclopedia sections, and tables of project principles and documents.",
-        caption: "MiryoWiki homepage: navigation, encyclopedia overview, and information about project principles and documents."
-      }
-    },
     board: {
       title: "MiryoBoard",
       metaTitle: "MiryoBoard — independent anonymous imageboard | MiryoLove",
@@ -861,8 +783,8 @@ const resourcePages = {
           status: "in-progress",
           completed: [
             "Создан статический сайт с переключением русского и английского языков и сохранением выбора.",
-            "Добавлены отдельные страницы проектов и реальный скриншот интерфейса MiryoWiki.",
-            "Реализованы настройки согласия, управление локальным выбором и страницы политик."
+            "Добавлены отдельные страницы проектов и переключение между русским и английским интерфейсами.",
+            "Добавлены информационное уведомление о cookies и страницы политик."
           ],
           current: ["Сайт развивается постепенно; подтверждённый график релизов не объявлен."],
           planned: []
@@ -874,15 +796,6 @@ const resourcePages = {
           status: "in-progress",
           completed: [],
           current: ["Заявленное направление — независимый ИИ-помощник и изучение ИИ. Подключённая модель и публичная версия не подтверждены."],
-          planned: []
-        },
-        {
-          name: "MiryoWiki",
-          summary: "Самостоятельный проект технической энциклопедии.",
-          href: "projects/miryowiki.html",
-          status: "in-progress",
-          completed: ["Скриншот главной страницы MiryoWiki опубликован на странице проекта."],
-          current: ["Проект описан как техническая энциклопедия; сайт доступен по адресу wiki.miryolove.org."],
           planned: []
         },
         {
@@ -921,11 +834,10 @@ const resourcePages = {
       entries: [
         { title: "Создана статическая версия сайта", project: "MiryoLove Web", type: "feature", description: "Подготовлены главная страница и каталог направлений MiryoLove на статической архитектуре." },
         { title: "Добавлена поддержка русского и английского языков", project: "MiryoLove Web", type: "feature", description: "Добавлены переключатель языка и сохранение выбранного языка между страницами." },
-        { title: "Появились отдельные страницы проектов", project: "MiryoLove Web", type: "feature", description: "Созданы самостоятельные информационные страницы проектов; для MiryoWiki размещён настоящий скриншот интерфейса." },
+        { title: "Появились отдельные страницы проектов", project: "MiryoLove Web", type: "feature", description: "Созданы самостоятельные информационные страницы проектов MiryoLove." },
         { title: "Обновлены визуальный стиль и взаимодействия", project: "MiryoLove Web", type: "improvement", description: "Усилены glassmorphism, адаптивность и мягкие анимации; учтена настройка уменьшения движения." },
-        { title: "Добавлены настройки согласия", project: "MiryoLove Web", type: "feature", description: "Реализовано локальное сохранение выбора, возможность изменить или отозвать его; аналитические и маркетинговые интеграции не подключались." },
+        { title: "Добавлено уведомление о cookies", project: "MiryoLove Web", type: "feature", description: "Добавлено двуязычное информационное уведомление; необязательные cookies и трекеры не используются." },
         { title: "Опубликованы страницы политик", project: "MiryoLove Web", type: "documentation", description: "Добавлены страницы конфиденциальности, cookies и условий использования с описанием фактического поведения сайта и неизвестных сведений, требующих подтверждения владельцем." },
-        { title: "Исправлено закрытие настроек приватности", project: "MiryoLove Web", type: "fix", description: "Клавиша Esc закрывает диалог, а фокус возвращается к элементу, открывшему настройки." },
         { title: "Добавлены страницы дорожной карты, обновлений и философии", project: "MiryoLove Web", type: "feature", description: "Созданы новые разделы на русском и английском языках; даты и выпуски не указываются без подтверждения." }
       ]
     },
@@ -957,8 +869,8 @@ const resourcePages = {
           status: "in-progress",
           completed: [
             "A static website with Russian and English interfaces and saved language preference.",
-            "Dedicated project pages and the real MiryoWiki interface screenshot.",
-            "Consent settings, local choice management, and policy pages."
+            "Dedicated project pages and Russian/English interface switching.",
+            "An informational cookie notice and policy pages."
           ],
           current: ["The site continues to develop incrementally; no confirmed release schedule has been announced."],
           planned: []
@@ -970,15 +882,6 @@ const resourcePages = {
           status: "in-progress",
           completed: [],
           current: ["The stated direction is an independent AI assistant and AI exploration. A connected model and public release have not been confirmed."],
-          planned: []
-        },
-        {
-          name: "MiryoWiki",
-          summary: "A standalone technical encyclopedia project.",
-          href: "projects/miryowiki.html",
-          status: "in-progress",
-          completed: ["A screenshot of the MiryoWiki homepage is published on its project page."],
-          current: ["The project is described as a technical encyclopedia; the site is available at wiki.miryolove.org."],
           planned: []
         },
         {
@@ -1017,11 +920,10 @@ const resourcePages = {
       entries: [
         { title: "Created the static website", project: "MiryoLove Web", type: "feature", description: "Built the homepage and directory of MiryoLove areas using a static architecture." },
         { title: "Added Russian and English support", project: "MiryoLove Web", type: "feature", description: "Added a language switcher and persistence of the selected language across pages." },
-        { title: "Added dedicated project pages", project: "MiryoLove Web", type: "feature", description: "Created standalone project information pages and added the real interface screenshot to the MiryoWiki page." },
+        { title: "Added dedicated project pages", project: "MiryoLove Web", type: "feature", description: "Created standalone information pages for MiryoLove projects." },
         { title: "Refined the visual style and interactions", project: "MiryoLove Web", type: "improvement", description: "Enhanced glassmorphism, responsive behavior, and subtle animations, including reduced-motion support." },
-        { title: "Added consent controls", project: "MiryoLove Web", type: "feature", description: "Implemented local storage of user choices and the ability to change or withdraw them; no analytics or marketing integrations were added." },
+        { title: "Added a cookie notice", project: "MiryoLove Web", type: "feature", description: "Added a bilingual informational notice; no optional cookies or trackers are used." },
         { title: "Published policy pages", project: "MiryoLove Web", type: "documentation", description: "Added privacy, cookie, and terms pages describing actual site behavior and unknown details that require owner confirmation." },
-        { title: "Fixed privacy settings dismissal", project: "MiryoLove Web", type: "fix", description: "Escape closes the dialog and focus returns to the element that opened the settings." },
         { title: "Added roadmap, changelog, and philosophy pages", project: "MiryoLove Web", type: "feature", description: "Created the new sections in Russian and English; no dates or releases are claimed without confirmation." }
       ]
     },
@@ -1046,17 +948,7 @@ const languageButtons = document.querySelectorAll("[data-language]");
 const menuToggle = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".navigation");
 const storageKey = "miryolove-language";
-const consentStorageKey = "miryolove-consent-v1";
-const consentVersion = 1;
-const defaultConsent = {
-  version: consentVersion,
-  necessary: true,
-  preferences: false,
-  analytics: false,
-  marketing: false
-};
-let savedConsent = null;
-let consentDialogReturnFocus = null;
+const noticeDismissedStorageKey = "miryolove-cookie-notice-dismissed-v1";
 
 function getSiteRoot() {
   return document.querySelector("[data-root]")?.dataset.root || (location.pathname.includes("/projects/") ? "../" : "./");
@@ -1065,10 +957,10 @@ function getSiteRoot() {
 function getSavedLanguage() {
   try {
     const savedLanguage = window.localStorage.getItem(storageKey);
-    return savedLanguage === "en" || savedLanguage === "ru" ? savedLanguage : "ru";
+    return savedLanguage === "en" || savedLanguage === "ru" ? savedLanguage : "en";
   } catch (error) {
     console.warn("Could not read the saved language preference.", error);
-    return "ru";
+    return "en";
   }
 }
 
@@ -1088,45 +980,6 @@ function closeMenu() {
   document.body.classList.remove("menu-open");
 }
 
-function getSavedConsent() {
-  try {
-    const raw = window.localStorage.getItem(consentStorageKey);
-    if (!raw) return null;
-    const stored = JSON.parse(raw);
-    if (
-      stored?.version !== consentVersion ||
-      typeof stored.preferences !== "boolean" ||
-      typeof stored.analytics !== "boolean" ||
-      typeof stored.marketing !== "boolean"
-    ) {
-      return null;
-    }
-    return { ...defaultConsent, ...stored, necessary: true };
-  } catch (error) {
-    console.warn("Could not read the saved privacy choice.", error);
-    return null;
-  }
-}
-
-function saveConsent(choices) {
-  const record = {
-    version: consentVersion,
-    necessary: true,
-    preferences: Boolean(choices.preferences),
-    analytics: Boolean(choices.analytics),
-    marketing: Boolean(choices.marketing)
-  };
-  try {
-    window.localStorage.setItem(consentStorageKey, JSON.stringify(record));
-    savedConsent = record;
-    return true;
-  } catch (error) {
-    console.warn("Could not save the privacy choice.", error);
-    showConsentStorageError();
-    return false;
-  }
-}
-
 function initializePrivacyLinks() {
   const footer = document.querySelector(".footer-main");
   if (!footer) return;
@@ -1138,8 +991,7 @@ function initializePrivacyLinks() {
       <h2 data-i18n="privacyLinksTitle"></h2>
       <a href="${root}privacy.html" data-i18n="privacyPolicyLink"></a>
       <a href="${root}cookies.html" data-i18n="cookiesPolicyLink"></a>
-      <a href="${root}terms.html" data-i18n="termsLink"></a>
-      <button class="footer-settings-link" type="button" data-open-privacy data-i18n="privacySettingsLink"></button>`;
+      <a href="${root}terms.html" data-i18n="termsLink"></a>`;
     footer.append(column);
   }
   if (!footer.querySelector(".footer-resources-column")) {
@@ -1173,166 +1025,71 @@ function initializeResourceNavigation() {
   navigation.append(link);
 }
 
-function createPrivacyControls() {
-  if (document.getElementById("privacy-consent-banner")) return;
-  const root = getSiteRoot();
-  const banner = document.createElement("aside");
-  banner.id = "privacy-consent-banner";
-  banner.className = "privacy-consent-banner";
-  banner.setAttribute("aria-labelledby", "consent-banner-title");
-  banner.setAttribute("aria-describedby", "consent-banner-description");
-  banner.hidden = true;
-  banner.innerHTML = `
-    <div class="consent-banner-copy">
-      <p class="consent-eyebrow" data-i18n="consentEyebrow"></p>
-      <h2 id="consent-banner-title" data-i18n="consentTitle"></h2>
-      <p id="consent-banner-description" data-i18n="consentSummary"></p>
-      <div class="consent-document-links">
-        <a href="${root}privacy.html" data-i18n="consentPrivacyLink"></a>
-        <a href="${root}cookies.html" data-i18n="consentCookiesLink"></a>
-      </div>
+function createCookieNotice() {
+  if (document.getElementById("cookie-notice")) return;
+  const notice = document.createElement("aside");
+  notice.id = "cookie-notice";
+  notice.className = "cookie-notice";
+  notice.setAttribute("role", "region");
+  notice.setAttribute("aria-live", "polite");
+  notice.setAttribute("aria-labelledby", "cookie-notice-title");
+  notice.setAttribute("aria-describedby", "cookie-notice-description");
+  notice.hidden = true;
+  notice.innerHTML = `
+    <div class="cookie-notice-copy">
+      <h2 id="cookie-notice-title" data-i18n="cookieNoticeTitle"></h2>
+      <p id="cookie-notice-description" data-i18n="cookieNoticeText"></p>
+      <a href="${getSiteRoot()}cookies.html" data-i18n="cookieNoticeLink"></a>
     </div>
-    <div class="consent-banner-actions">
-      <button class="consent-button consent-button-primary" type="button" data-consent-action="accept" data-i18n="acceptAll"></button>
-      <button class="consent-button consent-button-secondary" type="button" data-consent-action="reject" data-i18n="rejectOptional"></button>
-      <button class="consent-button consent-button-quiet" type="button" data-consent-action="customize" data-i18n="customize"></button>
-    </div>
-    <p class="consent-storage-error" role="status" aria-live="polite" hidden data-i18n="consentStorageErrorShort"></p>`;
-  document.body.append(banner);
-
-  const dialog = document.createElement("dialog");
-  dialog.id = "privacy-settings-dialog";
-  dialog.className = "privacy-settings-dialog";
-  dialog.setAttribute("aria-labelledby", "consent-dialog-title");
-  dialog.setAttribute("aria-describedby", "consent-dialog-description");
-  dialog.innerHTML = `
-    <div class="privacy-dialog-inner">
-      <div class="privacy-dialog-heading">
-        <div>
-          <p class="consent-eyebrow" data-i18n="consentEyebrow"></p>
-          <h2 id="consent-dialog-title" data-i18n="consentDialogTitle"></h2>
-        </div>
-        <button class="privacy-dialog-close" type="button" data-close-privacy data-i18n-aria-label="consentDialogClose">
-          <span aria-hidden="true">×</span>
-        </button>
-      </div>
-      <p id="consent-dialog-description" class="privacy-dialog-intro" data-i18n="consentDialogIntro"></p>
-      <div class="consent-categories">
-        <section class="consent-category consent-category-required">
-          <div class="consent-category-copy">
-            <h3 data-i18n="consentNecessaryTitle"></h3>
-            <p data-i18n="consentNecessaryDescription"></p>
-          </div>
-          <label class="consent-toggle">
-            <input type="checkbox" checked disabled aria-label="Necessary storage is always enabled" data-i18n-aria-label="consentNecessaryToggle" />
-            <span class="consent-toggle-track" aria-hidden="true"></span>
-            <span class="consent-toggle-state" data-i18n="consentAlwaysOn"></span>
-          </label>
-        </section>
-        <section class="consent-category">
-          <div class="consent-category-copy">
-            <h3 data-i18n="consentPreferencesTitle"></h3>
-            <p data-i18n="consentPreferencesDescription"></p>
-          </div>
-          <label class="consent-toggle">
-            <input type="checkbox" name="preferences" />
-            <span class="consent-toggle-track" aria-hidden="true"></span>
-            <span class="sr-only" data-i18n="consentPreferencesToggle"></span>
-          </label>
-        </section>
-        <section class="consent-category">
-          <div class="consent-category-copy">
-            <h3 data-i18n="consentAnalyticsTitle"></h3>
-            <p data-i18n="consentAnalyticsDescription"></p>
-          </div>
-          <label class="consent-toggle">
-            <input type="checkbox" name="analytics" />
-            <span class="consent-toggle-track" aria-hidden="true"></span>
-            <span class="sr-only" data-i18n="consentAnalyticsToggle"></span>
-          </label>
-        </section>
-        <section class="consent-category">
-          <div class="consent-category-copy">
-            <h3 data-i18n="consentMarketingTitle"></h3>
-            <p data-i18n="consentMarketingDescription"></p>
-          </div>
-          <label class="consent-toggle">
-            <input type="checkbox" name="marketing" />
-            <span class="consent-toggle-track" aria-hidden="true"></span>
-            <span class="sr-only" data-i18n="consentMarketingToggle"></span>
-          </label>
-        </section>
-      </div>
-      <p class="consent-storage-error" role="status" aria-live="polite" hidden data-i18n="consentStorageError"></p>
-      <div class="privacy-dialog-actions">
-        <button class="consent-button consent-button-primary" type="button" data-consent-action="save" data-i18n="saveConsent"></button>
-        <button class="consent-button consent-button-secondary" type="button" data-consent-action="accept" data-i18n="acceptAll"></button>
-        <button class="consent-button consent-button-quiet" type="button" data-consent-action="reject" data-i18n="rejectOptional"></button>
-      </div>
-      <div class="consent-document-links">
-        <a href="${root}privacy.html" data-i18n="consentPrivacyLink"></a>
-        <a href="${root}cookies.html" data-i18n="consentCookiesLink"></a>
-      </div>
+    <div class="cookie-notice-actions">
+      <button class="cookie-notice-button" type="button" data-i18n="cookieNoticeDismiss"></button>
     </div>`;
-  document.body.append(dialog);
-
-  banner.querySelectorAll("[data-consent-action]").forEach((button) => {
-    button.addEventListener("click", () => handleConsentAction(button.dataset.consentAction));
-  });
-  dialog.querySelectorAll("[data-consent-action]").forEach((button) => {
-    button.addEventListener("click", () => handleConsentAction(button.dataset.consentAction));
-  });
-  dialog.querySelector("[data-close-privacy]").addEventListener("click", closePrivacyDialog);
-  dialog.addEventListener("click", (event) => {
-    if (event.target === dialog) closePrivacyDialog();
-  });
-  dialog.addEventListener("cancel", (event) => {
-    event.preventDefault();
-    closePrivacyDialog();
-  });
-  dialog.addEventListener("keydown", trapDialogFocus);
-  document.querySelectorAll("[data-open-privacy]").forEach((button) => {
-    button.addEventListener("click", openPrivacyDialog);
-  });
+  document.body.append(notice);
+  notice.querySelector("button").addEventListener("click", dismissCookieNotice);
 }
 
-function showConsentBanner() {
-  const banner = document.getElementById("privacy-consent-banner");
-  if (banner) banner.hidden = false;
+function isCookieNoticeDismissed() {
+  try {
+    return window.sessionStorage.getItem(noticeDismissedStorageKey) === "1";
+  } catch (error) {
+    console.warn("Could not read the cookie notice dismissal from session storage.", error);
+    return false;
+  }
 }
 
-function hideConsentBanner() {
-  const banner = document.getElementById("privacy-consent-banner");
-  if (banner) banner.hidden = true;
+function dismissCookieNotice() {
+  const notice = document.getElementById("cookie-notice");
+  if (!notice) return;
+  try {
+    window.sessionStorage.setItem(noticeDismissedStorageKey, "1");
+  } catch (error) {
+    console.warn("Could not save the cookie notice dismissal in session storage.", error);
+  }
+
+  notice.querySelector("button").disabled = true;
+  notice.classList.remove("is-visible");
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    notice.hidden = true;
+    return;
+  }
+  window.setTimeout(() => {
+    notice.hidden = true;
+  }, 200);
 }
 
-function showConsentStorageError() {
-  const dialog = document.getElementById("privacy-settings-dialog");
-  const error = dialog?.open
-    ? dialog.querySelector(".consent-storage-error")
-    : document.querySelector("#privacy-consent-banner .consent-storage-error");
-  if (error) error.hidden = false;
+function initializeCookieNotice() {
+  const notice = document.getElementById("cookie-notice");
+  if (!notice || isCookieNoticeDismissed()) return;
+  notice.hidden = false;
+  window.requestAnimationFrame(() => notice.classList.add("is-visible"));
 }
 
-function openPrivacyDialog() {
-  const dialog = document.getElementById("privacy-settings-dialog");
-  if (!dialog) return;
-  consentDialogReturnFocus = document.activeElement;
-  const choices = savedConsent || defaultConsent;
-  ["preferences", "analytics", "marketing"].forEach((category) => {
-    const input = dialog.querySelector(`input[name="${category}"]`);
-    input.checked = choices[category];
-  });
-  const error = dialog.querySelector(".consent-storage-error");
-  error.hidden = true;
-  dialog.showModal();
-  dialog.querySelector(".privacy-dialog-close").focus();
-}
-
-function closePrivacyDialog() {
-  const dialog = document.getElementById("privacy-settings-dialog");
-  if (dialog?.open) dialog.close();
-  if (consentDialogReturnFocus instanceof HTMLElement) consentDialogReturnFocus.focus();
+function removeObsoleteConsentChoice() {
+  try {
+    window.localStorage.removeItem("miryolove-consent-v1");
+  } catch (error) {
+    console.warn("Could not remove the obsolete privacy choice from local storage.", error);
+  }
 }
 
 function renderLegalPage(language) {
@@ -1614,65 +1371,6 @@ function initializeRoadmapFilters() {
   });
 }
 
-function trapDialogFocus(event) {
-  if (event.key === "Escape") {
-    event.preventDefault();
-    closePrivacyDialog();
-    return;
-  }
-  if (event.key !== "Tab") return;
-  const dialog = event.currentTarget;
-  const focusable = [...dialog.querySelectorAll('button:not([disabled]), input:not([disabled]), a[href]')];
-  if (!focusable.length) return;
-  const first = focusable[0];
-  const last = focusable[focusable.length - 1];
-  if (event.shiftKey && document.activeElement === first) {
-    event.preventDefault();
-    last.focus();
-  } else if (!event.shiftKey && document.activeElement === last) {
-    event.preventDefault();
-    first.focus();
-  }
-}
-
-function handleConsentAction(action) {
-  let choices;
-  if (action === "accept") {
-    choices = { necessary: true, preferences: true, analytics: true, marketing: true };
-  } else if (action === "reject") {
-    choices = { ...defaultConsent };
-  } else if (action === "save") {
-    const dialog = document.getElementById("privacy-settings-dialog");
-    choices = {
-      necessary: true,
-      preferences: dialog.querySelector('input[name="preferences"]').checked,
-      analytics: dialog.querySelector('input[name="analytics"]').checked,
-      marketing: dialog.querySelector('input[name="marketing"]').checked
-    };
-  } else if (action === "customize") {
-    openPrivacyDialog();
-    return;
-  } else {
-    return;
-  }
-
-  if (!saveConsent(choices)) return;
-  hideConsentBanner();
-  closePrivacyDialog();
-}
-
-function initializeConsent() {
-  savedConsent = getSavedConsent();
-  if (!savedConsent) showConsentBanner();
-}
-
-window.addEventListener("storage", (event) => {
-  if (event.key !== consentStorageKey && event.key !== null) return;
-  savedConsent = getSavedConsent();
-  if (savedConsent) hideConsentBanner();
-  else showConsentBanner();
-});
-
 function renderProjectPage(language) {
   const projectMain = document.querySelector("[data-project]");
   if (!projectMain) return;
@@ -1948,9 +1646,10 @@ function initializeReveal() {
 initializeProjectFilters();
 initializeResourceNavigation();
 initializePrivacyLinks();
-createPrivacyControls();
+createCookieNotice();
+removeObsoleteConsentChoice();
 document.querySelectorAll("#current-year, .current-year").forEach((element) => {
   element.textContent = String(new Date().getFullYear());
 });
 setLanguage(getSavedLanguage(), false);
-initializeConsent();
+initializeCookieNotice();
