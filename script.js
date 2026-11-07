@@ -116,7 +116,7 @@ const translations = {
     cookiesPolicyLink: "Политика cookies",
     termsLink: "Условия использования",
     cookieNoticeTitle: "Использование файлов cookie",
-    cookieNoticeText: "Сайт не устанавливает HTTP-cookie. Язык сохраняется в localStorage, а закрытие уведомления — в sessionStorage до конца сессии вкладки. Эти значения не отправляются в запросах. «Понятно» только закрывает уведомление.",
+    cookieNoticeText: "Код не обращается к document.cookie; Set-Cookie не найден в проверенных GET-ответах отдельных маршрутов. Язык хранится в localStorage, закрытие уведомления — в sessionStorage до конца сессии вкладки. Эти значения не отправляются в запросах. «Понятно» закрывает уведомление.",
     cookieNoticeLink: "Политика использования cookies",
     cookieNoticeDismiss: "Понятно",
     privacyPageTitle: "Конфиденциальность",
@@ -244,7 +244,7 @@ const translations = {
     cookiesPolicyLink: "Cookie policy",
     termsLink: "Terms of use",
     cookieNoticeTitle: "Cookie Usage",
-    cookieNoticeText: "This site does not set HTTP cookies. Your language is stored in localStorage, and notice dismissal in sessionStorage until this tab session ends. These values are not sent in requests. “Got it” only dismisses this notice.",
+    cookieNoticeText: "The code does not access document.cookie; no Set-Cookie header was found in the checked GET responses for selected routes. Language is stored in localStorage and notice dismissal in sessionStorage for the tab session. These values are not sent in requests. “Got it” only dismisses the notice.",
     cookieNoticeLink: "Cookie Policy",
     cookieNoticeDismiss: "Got it",
     privacyPageTitle: "Privacy",
@@ -284,13 +284,13 @@ const legalPages = {
           title: "Данные в браузере",
           paragraphs: [
             "В localStorage сайт сохраняет выбранный язык интерфейса (ключ miryolove-language) до очистки данных сайта. В sessionStorage сохраняется только закрытие информационного уведомления о cookies (ключ miryolove-cookie-notice-dismissed-v1) до окончания сессии вкладки. Эти значения не содержат идентификатора посетителя и не отправляются сайтом на сервер.",
-            "Сайт не устанавливает HTTP-cookie. Для самого сайта данные localStorage и sessionStorage не обязательны: без них язык по умолчанию — английский, а уведомление показывается снова."
+            "В проверенном исходном коде нет обращений к document.cookie. В проверенных GET-ответах Set-Cookie не обнаружен; эта проверка не охватывает все методы, маршруты и будущие изменения. localStorage и sessionStorage для работы сайта не обязательны: без них язык по умолчанию — английский, а уведомление показывается снова."
           ]
         },
         {
           title: "Сетевые запросы и получатели",
           paragraphs: [
-            "Для доставки страниц сервер кратковременно обрабатывает IP-адрес источника соединения и параметры запроса. В активной конфигурации Caddy отдельный журнал запросов основного сайта сейчас не включён; Caddy передаёт системные диагностические сообщения, а также сообщения TLS и ACME в системный журнал systemd. В подготовленной, но ещё не применённой конфигурации журнал запросов будет записывать только время запроса в UTC и исходное значение заголовка User-Agent в /var/log/caddy/miryolove-access.json; журнал будет ротироваться и храниться не дольше 14 дней. В JSON-записях также остаются служебные поля Caddy. IP-адрес, путь и параметры URL, заголовок Referer, файлы cookie и остальные заголовки удаляются из этого журнала. Фильтр не охватывает отдельные ошибки Caddy во время работы: они могут содержать IP-адрес или сведения о запросе. Срок хранения и доступ к системному журналу systemd не подтверждены; его общий размер на дату проверки — 1,2 ГБ, но это не срок хранения. Конфигурация ещё не применена, поэтому фактические серверные журналы следует проверить после согласованного переключения.",
+            "Для доставки страниц сервер обрабатывает сетевые данные; при установлении соединения он также технически обрабатывает IP-адрес. Текущая конфигурация Caddy включает журнал запросов: фильтр исключает из него IP-поля, URI и заголовки запроса и ответа. В записях могут оставаться имя хоста, HTTP-метод и версия протокола, сведения TLS, статус, размер ответа, длительность и другие стандартные поля. Отдельные диагностические сообщения могут содержать технические сведения о запросах. Настройки ротации соответствуют примерно 365 дням; удаление архивов происходит при создании следующего файла, поэтому точный срок удаления не гарантируется. Для отдельных диагностических сообщений настроен максимальный срок хранения 365 дней; срок хранения более старых сообщений и журналов провайдера неизвестен. Конкретные цели хранения журнала, помимо технической передачи страницы, и получатели не подтверждены.",
             "Если вы сами переходите по внешней ссылке, ваш браузер связывается с выбранным внешним сервисом. Его обработка данных регулируется правилами этого сервиса; MiryoLove Web не встраивает его содержимое."
           ]
         },
@@ -322,8 +322,8 @@ const legalPages = {
         {
           title: "HTTP-cookie",
           paragraphs: [
-            "7 ноября 2026 года заголовок Set-Cookie не обнаружен в GET-ответах главной страницы, девяти канонических страниц, JavaScript, CSS, sitemap.xml, robots.txt и проверочного неизвестного URL. Код сайта не обращается к document.cookie. Проверка относится к этим публичным маршрутам и дате аудита; другие методы, host blocks и конфигурацию сервера следует проверять отдельно и повторять после изменений.",
-            "Необязательные cookies и другие технологии отслеживания, для которых требовался бы выбор пользователя, не используются. Поэтому уведомление носит информационный характер, а кнопка «Понятно» не является согласием."
+            "Проверка исходного кода не обнаружила обращений к document.cookie. Отдельная HTTP-проверка 7 ноября 2026 года не обнаружила Set-Cookie в GET-ответах главной страницы, девяти канонических страниц, JavaScript, CSS, sitemap.xml, robots.txt и проверочного неизвестного URL. Это результат только для перечисленных GET-запросов и даты проверки; он не устанавливает поведение других методов, маршрутов, посредников или будущей конфигурации.",
+            "В исходном коде не обнаружены аналитика, рекламные пиксели и подключённые технологии отслеживания. Уведомление носит информационный характер, а кнопка «Понятно» не является согласием."
           ]
         },
         {
@@ -339,19 +339,19 @@ const legalPages = {
         {
           title: "Сторонние и аналитические cookies",
           paragraphs: [
-            "Сайт не подключает сторонние cookies, рекламные трекеры или аналитические системы. Внешние ресурсы не встроены в страницы. Обычные ссылки на сторонние сайты могут открыть их сервис только после вашего перехода; на них распространяются политики соответствующих владельцев."
+            "Сайт не подключает сторонние cookies, рекламные трекеры или аналитические системы. Внешние ресурсы не встроены в страницы. Обычные ссылки на сторонние сайты могут открыть их сервис только после вашего перехода; на них распространяются политики соответствующих владельцев. При доставке сайта сервер технически обрабатывает IP-адрес, имя хоста, HTTP-метод и версию протокола, сведения TLS, статус и размер ответа, длительность и другие данные запроса. IP-поля, URI и заголовки запроса и ответа исключаются из журнала доступа; отдельные диагностические записи могут содержать технические сведения о запросе. Настройки ротации соответствуют примерно 365 дням, но точный момент удаления не гарантируется. Для отдельных диагностических записей настроен максимальный срок 365 дней; срок хранения более старых записей и журналов провайдера неизвестен. Цели хранения журнала сверх технической доставки страниц и получатели не подтверждены."
           ]
         },
         {
           title: "Как управлять данными",
           paragraphs: [
-            "Удалите localStorage и sessionStorage MiryoLove Web или очистите данные сайта в настройках браузера. После удаления выбранного языка сайт использует английский по умолчанию; после удаления отметки уведомление может появиться снова. Настройки cookies браузера доступны отдельно, хотя сайт не устанавливает HTTP-cookie."
+            "Удалите localStorage и sessionStorage MiryoLove Web или очистите данные сайта в настройках браузера. После удаления выбранного языка сайт использует английский по умолчанию; после удаления отметки уведомление может появиться снова. Управление HTTP-cookie в браузере доступно отдельно; проверка исходного кода и ограниченная проверка GET-ответов описаны выше."
           ]
         },
         {
           title: "Вопросы о конфиденциальности",
           paragraphs: [
-            "Публичный адрес электронной почты или иной официальный контакт для вопросов о конфиденциальности в материалах проекта не указан. Не подменяя его сторонним сервисом или неподтверждённым адресом, владелец проекта должен опубликовать действующий контакт для таких обращений."
+            "Оператор персональных данных: Мельников Богдан Игоревич. Основной канал обращений по вопросам персональных данных: bonjour.1958@mail.ru. Дополнительный адрес: aloha.778343@gmail.com. Почтовый адрес оператора и другие сведения здесь не указываются."
           ]
         },
         {
@@ -410,13 +410,13 @@ const legalPages = {
           title: "Data in your browser",
           paragraphs: [
             "The site stores your selected interface language in localStorage (the miryolove-language key) until site data is cleared. sessionStorage stores only whether you dismissed the cookie information notice (the miryolove-cookie-notice-dismissed-v1 key), until that tab's session ends. These values do not contain a visitor identifier and are not sent to a server by the site.",
-            "The site does not set HTTP cookies. Neither storage mechanism is required for the site itself: without stored values, English is the default language and the notice is shown again."
+            "The reviewed source code does not access document.cookie. No Set-Cookie header was found in the checked GET responses; this does not cover every method, route, or future change. Neither storage mechanism is required for the site itself: without stored values, English is the default language and the notice is shown again."
           ]
         },
         {
           title: "Network requests and recipients",
           paragraphs: [
-            "To deliver a page, the server briefly processes the connection's source IP address and request details. The active Caddy configuration currently has no dedicated access log for the main site; Caddy sends system diagnostic, TLS, and ACME messages to the systemd journal. A prepared but not yet applied access log will retain only the UTC time and raw User-Agent from request data in /var/log/caddy/miryolove-access.json for at most 14 days with rotation; static Caddy metadata fields also remain in each JSON record. The IP address, URL path and query, Referer, cookies, and other headers are removed from that access log. This filter does not cover separate Caddy runtime errors, which may contain IP addresses or request details. systemd journal retention and access are unconfirmed; its total size at review was 1.2 GB, which is not a retention period. The configuration is not active yet, so actual production logs must be checked after an approved switch.",
+            "To deliver pages, the server processes connection and request data, including the source IP address needed to establish a connection. The current Caddy configuration enables an access log whose filter excludes IP fields, the request URI, and request and response headers. Records may retain the requested host, HTTP method and protocol, TLS metadata, status, response size, duration, and other standard fields. Separate diagnostic messages may contain technical request details. Rotation settings correspond to about 365 days; archives are cleaned when a new file is created, so the exact deletion time is not guaranteed. Separate diagnostic messages have a configured maximum retention of 365 days; older messages and provider logs have unknown retention. The operator's specific purposes for retaining access-log data beyond technical page delivery and its recipients are unconfirmed.",
             "If you choose to follow an external link, your browser connects to that external service. Its own privacy terms govern its data handling; MiryoLove Web does not embed its content."
           ]
         },
@@ -448,8 +448,8 @@ const legalPages = {
         {
           title: "HTTP cookies",
           paragraphs: [
-            "On November 7, 2026, no Set-Cookie header was found in GET responses for the homepage, nine canonical pages, JavaScript, CSS, sitemap.xml, robots.txt, or a checked unknown URL. The site code does not access document.cookie. This check covers those public routes and that audit date; other methods, host blocks, and server configuration require separate review and rechecking after changes.",
-            "No optional cookies or other tracking technologies requiring user choice are used. The notice is informational, and the Got it button is not consent."
+            "The reviewed source code does not access document.cookie. A separate HTTP check on November 7, 2026 found no Set-Cookie header in GET responses for the homepage, nine canonical pages, JavaScript, CSS, sitemap.xml, robots.txt, or a checked unknown URL. That result applies only to those GET requests and that date; it does not establish behavior for other methods, routes, intermediaries, or future changes.",
+            "The reviewed source code did not show analytics, advertising pixels, or connected tracking tools. The notice is informational, and the Got it button is not consent."
           ]
         },
         {
@@ -465,19 +465,19 @@ const legalPages = {
         {
           title: "Third-party and analytics cookies",
           paragraphs: [
-            "The site does not connect third-party cookies, advertising trackers, or analytics systems. External resources are not embedded in its pages. Ordinary links to external sites may connect to those services only after you follow a link; their owners' policies then apply."
+            "The site does not connect third-party cookies, advertising trackers, or analytics systems. External resources are not embedded in its pages. Ordinary links to external sites may connect to those services only after you follow a link; their owners' policies then apply. To deliver the site, the server technically processes the source IP address, requested host, HTTP method and protocol, TLS metadata, status, response size, duration, and other request data. IP fields, the request URI, and request and response headers are excluded from the access log; separate diagnostic messages may contain technical request details. The configured rotation is about 365 days, but exact deletion timing is not guaranteed. Separate diagnostic records have a configured maximum retention of 365 days; retention of older records and provider logs is unknown. Specific retention purposes beyond technical page delivery and recipients have not been confirmed."
           ]
         },
         {
           title: "Managing browser storage",
           paragraphs: [
-            "Remove MiryoLove Web's localStorage and sessionStorage entries or clear this site's data in your browser settings. Without a saved language the site defaults to English; after the notice dismissal entry is removed, the notice may appear again. Browser cookie controls are separate, although this site does not set HTTP cookies."
+            "Remove MiryoLove Web's localStorage and sessionStorage entries or clear this site's data in your browser settings. Without a saved language the site defaults to English; after the notice dismissal entry is removed, the notice may appear again. Browser cookie controls are separate; the source-code and limited GET-response checks are described above."
           ]
         },
         {
           title: "Privacy contact",
           paragraphs: [
-            "The project materials do not identify a public email address or other official contact for privacy questions. Rather than inventing or substituting a third-party service, the project owner should publish a working contact for such requests."
+            "Personal data operator: Bogdan Igorevich Melnikov. Primary contact for personal-data matters: bonjour.1958@mail.ru. Additional email: aloha.778343@gmail.com. The operator's postal address and other details are not provided here."
           ]
         },
         {

@@ -25,7 +25,7 @@ No analytics, advertising pixels, tracking scripts, third-party fonts, or embedd
 - Removed local persistence of obsolete consent categories and added cleanup of the former consent key.
 - Kept the selected-language preference and changed the default for new visitors to English.
 - Added tab-session-only notice dismissal in `sessionStorage`; no cookie or persistent notice identifier was added.
-- Updated the cookie and privacy policy content to distinguish HTTP cookies from `localStorage` and `sessionStorage`, explain retention and controls, disclose the missing public privacy contact, and avoid unsupported legal conclusions.
+- Updated the cookie and privacy policy content to distinguish HTTP cookies from `localStorage` and `sessionStorage`, explain retention and controls, identify the operator as Bogdan Igorevich Melnikov, list the primary and additional contact emails, and avoid unsupported legal conclusions.
 
 ## 5. Files changed
 
@@ -63,11 +63,11 @@ The notice uses the saved site language and updates when the visitor switches RU
 - The clean URL and custom 404 behavior are only proposed in `deploy/miryolove-public-site.caddy`; they are not active until the site's files and route block are published and the active Caddy configuration is updated separately.
 - The three sampled public paths do not prove behavior for all server routes or hosting-provider infrastructure.
 - Hosting-provider identity, server logs, recipients, and retention are not documented in source.
-- No official privacy contact is published in the project materials.
+- The identified personal data operator is Bogdan Igorevich Melnikov. The policy lists `bonjour.1958@mail.ru` as the primary personal-data contact and `aloha.778343@gmail.com` as an additional address. No postal address is published.
 
 ## 10. Legal questions needing separate review
 
-Assess the current 152-FZ text and other applicable laws against the actual operator, processing purposes, browser values, access logs, hosting, data locations, vendors, users, and any cross-border transfers. Confirm any operator-notification, localization, security, transparency, contact, and lawful-basis requirements with qualified counsel. No specific legal basis or mandatory-consent conclusion is asserted here. A cookie notice alone does not establish legal compliance.
+The identified personal data operator is Bogdan Igorevich Melnikov. According to information provided by the owner, the operator was 16 years old on the document date; this is not a conclusion about legal capacity or authority. The policy lists `bonjour.1958@mail.ru` as the primary personal-data contact and `aloha.778343@gmail.com` as an additional address. The project materials do not provide the operator's postal address, identity-document or tax details, or authority. Assess the current 152-FZ text and other applicable laws against processing purposes, browser values, access logs, hosting, data locations, vendors, users, and any cross-border transfers. Confirm any operator-notification, localization, security, transparency, contact, and lawful-basis requirements with qualified counsel. No specific legal basis or mandatory-consent conclusion is asserted here. A cookie notice alone does not establish legal compliance.
 
 Reference: [Federal Law No. 152-FZ official publication record](https://publication.pravo.gov.ru/Document/View/0001200607290004); verify the current consolidated version and related rules.
 

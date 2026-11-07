@@ -21,7 +21,7 @@ Static, dependency-free MiryoLove website. The homepage, project pages, and shar
 - `/philosophy/` — MiryoLove values and approach in Russian and English.
 - Missing routes — branded bilingual not-found page; Caddy is configured to preserve HTTP 404 status.
 
-The HTML files remain static route sources. `deploy/Caddyfile.candidate` is the complete, locally validated candidate based on the currently active Caddyfile; it changes only the MiryoLove site block and retains the AI and press blocks. `deploy/miryolove-public-site.caddy` is only the main-site block for reference. Neither file is applied. The active Caddy root currently points to `/mnt/Manchild/Project/MiryoLove/Web/1`, which does not contain this site's current page set; the separate deployment copy is `/mnt/Manchild/Project/MiryoLove/MiryoLove Web-deploy`.
+The HTML files remain the static route sources. The current `/etc/caddy/Caddyfile` points to this site's root at `/mnt/Manchild/Project/MiryoLove/MiryoLove Web` and configures a filtered access log. The files under `deploy/` are reference material only; they do not represent the active full configuration and must not be applied without a separate review.
 
 Project and legal page content, translations, and the informational cookie notice are kept in `script.js`; shared layout and responsive styles are in `styles.css`.
 
@@ -35,6 +35,6 @@ python3 -m http.server 8000
 
 Then open <http://localhost:8000>. Python's server exposes the source `.html` files directly and does not implement clean routes or the custom HTTP 404 behavior.
 
-The interface defaults to English and stores the selected Russian or English language in local storage, including when navigating between pages. A bilingual, informational cookie notice remembers dismissal only for the current tab session; it does not ask for or record consent. The site does not set HTTP cookies or load analytics, advertising, or tracking scripts. See `/cookies/` and `docs/` for the cookie policy and technical audits. Project URLs are shown as unverified unless their availability has been confirmed.
+The interface defaults to English and stores the selected Russian or English language in local storage, including when navigating between pages. A bilingual, informational cookie notice remembers dismissal only for the current tab session; it does not ask for or record consent. The reviewed source does not access `document.cookie`; a separate check found no `Set-Cookie` header in the checked GET responses on 7 November 2026. That HTTP check does not cover every route or request method. See `/cookies/` and `docs/` for the cookie policy and technical audits. Project URLs are shown as unverified unless their availability has been confirmed.
 
-Before public launch, the owner should confirm the hosting provider's access logs and retention practices, and publish an official privacy contact. The technical 152-FZ checklist is in `docs/152-FZ_TECHNICAL_AUDIT.md`; it does not establish legal compliance or replace legal review.
+The personal data operator is identified in the privacy policy as Bogdan Igorevich Melnikov. That policy lists `bonjour.1958@mail.ru` as the primary contact for personal-data matters and `aloha.778343@gmail.com` as an additional address; the operator's postal address is not provided. Hosting-provider logging, retention, and recipients are not confirmed. The technical 152-FZ checklist is in `docs/152-FZ_TECHNICAL_AUDIT.md`; it does not establish legal compliance or replace legal review.

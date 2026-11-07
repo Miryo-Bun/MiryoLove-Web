@@ -2,6 +2,8 @@
 
 **Проверка локальной копии:** 7 ноября 2026 года.
 
+> Архивный снимок состояния на указанную дату. Текущий Caddy document root — `/mnt/Manchild/Project/MiryoLove/MiryoLove Web`; текущая конфигурация включает access log. Упоминания ниже о deployment root и отключённом access log относятся только к прежней проверке.
+
 ## Что проверено
 
 - Deployment-копия: 17 файлов, включая десять HTML-файлов, три изображения, CSS, JS, sitemap и robots.
@@ -9,7 +11,7 @@
 - JavaScript: `node --check` для source и deploy `script.js` прошёл.
 - Sitemap: оба XML-файла разбираются; deployment sitemap содержит девять канонических URL.
 - Локальные ссылки: 10 HTML-файлов, 184 локальные ссылки/ресурса, CSS URL и пути к логотипам из JS прошли проверку.
-- Активный `/etc/caddy/Caddyfile` прошёл `caddy validate`. Read-only admin API на loopback подтвердил загруженный root `MiryoLove Web-deploy`, hosts `miryolove.org` и `www.miryolove.org`, отсутствие reverse proxy и access logging.
+- На дату архивной проверки `/etc/caddy/Caddyfile` прошёл `caddy validate`; read-only admin API показал root `MiryoLove Web-deploy`, hosts `miryolove.org` и `www.miryolove.org`, отсутствие reverse proxy и access logging. Эти сведения о root и access logging устарели и заменены текущей конфигурацией.
 - Текущий `deploy/Caddyfile.candidate` устарел относительно active config: в нём остались дополнительные site blocks AI/press. Не применять его; требуется новый согласованный кандидат. Validation точного старого кандидата с `/var/log/caddy/miryolove-access.json` для текущего пользователя блокируется `permission denied`.
 - Изолированный Caddy на localhost подтвердил тестовый формат журнала: запись содержала только `ts`, статические `level`, `logger`, `msg` и искусственный `visitor_user_agent`; UNIX timestamp соответствует UTC. Тестовые IP, URL/query, Referer, Cookie, Authorization, другие headers, body и response metrics в запись не попали. Это не production-журналирование.
 - Локальный Caddy: канонические URL — 200, старые URL — 301, `www` redirect сохраняет путь/query, неизвестный путь — 404 с телом `404.html`. Старые `.html` и slash-normalization redirects query string не сохраняют.
