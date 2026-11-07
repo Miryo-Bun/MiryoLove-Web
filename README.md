@@ -1,5 +1,7 @@
 # MiryoLove Web
 
+[🇷🇺 Русская версия](README.ru.md) | [🇬🇧 English](README.md)
+
 <!--
 Copyright © 2026 Bogdan Melnikov.
 
