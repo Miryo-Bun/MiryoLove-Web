@@ -39,11 +39,11 @@ No analytics, advertising pixels, tracking scripts, third-party fonts, or embedd
 
 ## 6. Pages
 
-The existing static `cookies.html` page is retained and rendered in RU/EN through the site's existing language switch. A policy link is added to the existing footer. The project uses flat `.html` pages rather than a route-based `/cookies` path; no alternate route or server rewrite was introduced.
+The static source file `cookies.html` is retained and rendered in RU/EN through the site's existing language switch. Its intended public URL is `/cookies/`; the proposed Caddy mapping in `deploy/miryolove-public-site.caddy` rewrites that URL to the source file. The mapping is not applied, so the public route has not been verified on the active server.
 
 ## 7. RU/EN notice behavior
 
-The notice uses the saved site language and updates when the visitor switches RU/EN. A new visitor defaults to English. It links to `cookies.html`, is keyboard operable, is exposed as a labeled live region, and respects reduced-motion settings. Dismissal is remembered for the current tab session only and creates no consent record.
+The notice uses the saved site language and updates when the visitor switches RU/EN. A new visitor defaults to English. It links to `/cookies/`, is keyboard operable, is exposed as a labeled live region, and respects reduced-motion settings. Dismissal is remembered for the current tab session only and creates no consent record.
 
 ## 8. Checks performed
 
@@ -51,7 +51,7 @@ The notice uses the saved site language and updates when the visitor switches RU
 - Searches for cookie APIs, browser storage, service workers, request APIs, third-party embeds, and common analytics/ad scripts.
 - Public HTTP response checks for `https://miryolove.org/`, `/script.js`, and `/cookies.html`; all returned HTTP 200 and none returned `Set-Cookie`.
 - `node --check` on `script.js` and `git diff --check`; both passed. The repository has no package manifest or configured test runner/build.
-- Local browser loaded all 11 HTML pages with HTTP 200, RU/EN rendering, and footer policy links. The notice appeared in English by default, updated in Russian when switched, and persisted the language selection.
+- Local browser loaded all 11 HTML pages present during the 4 November 2026 review with HTTP 200, RU/EN rendering, and footer policy links. The subsequently removed roadmap page was not part of the current deployment copy.
 - Keyboard activation with Enter dismissed the notice. `sessionStorage` recorded only the dismissal; same-tab reload kept it hidden, while a new tab showed it again. `document.cookie` was empty in the local browser.
 - Local browser reported no JavaScript console errors or external network requests while visiting the pages.
 - At 390 × 844, the notice stayed within the viewport without horizontal overflow. Desktop and mobile screenshots were visually inspected; CSS also honors reduced-motion preferences.
@@ -60,6 +60,7 @@ The notice uses the saved site language and updates when the visitor switches RU
 ## 9. Remaining limitations
 
 - Public HTTP checks were performed before these repository changes are deployed; repeat them on the deployed version.
+- The clean URL and custom 404 behavior are only proposed in `deploy/miryolove-public-site.caddy`; they are not active until the site's files and route block are published and the active Caddy configuration is updated separately.
 - The three sampled public paths do not prove behavior for all server routes or hosting-provider infrastructure.
 - Hosting-provider identity, server logs, recipients, and retention are not documented in source.
 - No official privacy contact is published in the project materials.

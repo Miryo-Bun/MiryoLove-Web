@@ -1,7 +1,7 @@
 # MiryoLove Web — cookies and browser-storage audit
 
 **Review date:** 4 November 2026
-**Scope:** the static MiryoLove Web site in this repository, including its 11 HTML pages, shared JavaScript and CSS, local images, page links, and the sampled public HTTP responses. This is a technical inventory, not legal advice.
+**Scope:** the static MiryoLove Web site in this repository, including its current 10 HTML files (nine content pages and the custom 404), shared JavaScript and CSS, local images, page links, and the sampled public HTTP responses. This is a technical inventory, not legal advice.
 
 ## Summary
 
@@ -38,7 +38,7 @@ This is a point-in-time check of three public paths, not a guarantee about every
 
 ## Notice behavior
 
-The site now shows a bilingual information notice, not a consent banner. Its close button only dismisses the notice for the current tab session; it does not enable or accept optional processing. The notice uses the existing RU/EN language switch and links to the site's existing static policy page at `cookies.html`. The default language for a browser without a saved preference is English.
+The site now shows a bilingual information notice, not a consent banner. Its close button only dismisses the notice for the current tab session; it does not enable or accept optional processing. The notice uses the existing RU/EN language switch and links to the policy page at `/cookies/`. The source page is `cookies.html`; the clean-route mapping is only proposed in `deploy/miryolove-public-site.caddy` and has not been applied. The default language for a browser without a saved preference is English.
 
 ## Legal review needed
 

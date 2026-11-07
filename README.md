@@ -14,15 +14,14 @@ Static, dependency-free MiryoLove website. The homepage, project pages, and shar
 
 ## Pages
 
-- `index.html` — MiryoLove homepage and project directory.
-- `projects/miryolove-ai.html`
-- `projects/miryoboard.html`
-- `projects/miryolove-server.html`
-- `projects/git-service.html`
-- `privacy.html`, `cookies.html`, and `terms.html` — Russian/English legal information pages.
-- `roadmap.html` — confirmed project directions and status, without unsupported release dates.
-- `changelog.html` — confirmed website changes; entries without verified dates are undated.
-- `philosophy.html` — MiryoLove values and approach in Russian and English.
+- `/` — MiryoLove homepage and project directory.
+- `/miryolove-ai/`, `/miryolove-server/`, `/git-service/` — project pages.
+- `/privacy-policy/`, `/cookies/`, `/terms-of-use/` — Russian/English legal information pages.
+- `/changelog/` — confirmed website changes; entries without verified dates are undated.
+- `/philosophy/` — MiryoLove values and approach in Russian and English.
+- Missing routes — branded bilingual not-found page; Caddy is configured to preserve HTTP 404 status.
+
+The HTML files remain static route sources. `deploy/Caddyfile.candidate` is the complete, locally validated candidate based on the currently active Caddyfile; it changes only the MiryoLove site block and retains the AI and press blocks. `deploy/miryolove-public-site.caddy` is only the main-site block for reference. Neither file is applied. The active Caddy root currently points to `/mnt/Manchild/Project/MiryoLove/Web/1`, which does not contain this site's current page set; the separate deployment copy is `/mnt/Manchild/Project/MiryoLove/MiryoLove Web-deploy`.
 
 Project and legal page content, translations, and the informational cookie notice are kept in `script.js`; shared layout and responsive styles are in `styles.css`.
 
@@ -34,8 +33,8 @@ From this directory, start Python's built-in static server:
 python3 -m http.server 8000
 ```
 
-Then open <http://localhost:8000>. The site can also be hosted as static files at the domain root.
+Then open <http://localhost:8000>. Python's server exposes the source `.html` files directly and does not implement clean routes or the custom HTTP 404 behavior.
 
-The interface defaults to English and stores the selected Russian or English language in local storage, including when navigating between pages. A bilingual, informational cookie notice remembers dismissal only for the current tab session; it does not ask for or record consent. The site does not set HTTP cookies or load analytics, advertising, or tracking scripts. See `cookies.html` and `docs/` for the cookie policy and the dated technical audit. Project URLs are shown as unverified unless their availability has been confirmed.
+The interface defaults to English and stores the selected Russian or English language in local storage, including when navigating between pages. A bilingual, informational cookie notice remembers dismissal only for the current tab session; it does not ask for or record consent. The site does not set HTTP cookies or load analytics, advertising, or tracking scripts. See `/cookies/` and `docs/` for the cookie policy and technical audits. Project URLs are shown as unverified unless their availability has been confirmed.
 
-Before public launch, the owner should confirm the hosting provider's access logs and retention practices, and publish an official privacy contact. The legal pages explicitly identify these unknowns rather than guessing.
+Before public launch, the owner should confirm the hosting provider's access logs and retention practices, and publish an official privacy contact. The technical 152-FZ checklist is in `docs/152-FZ_TECHNICAL_AUDIT.md`; it does not establish legal compliance or replace legal review.
