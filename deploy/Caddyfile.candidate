@@ -1,0 +1,114 @@
+miryolove.org, www.miryolove.org {
+	root * "/mnt/Manchild/Project/MiryoLove/MiryoLove Web-deploy"
+
+	log {
+		output file /var/log/caddy/miryolove-access.json {
+			roll_size 10MiB
+			roll_keep 7
+			roll_keep_for 14d
+		}
+		format filter {
+			wrap json
+			fields {
+				request delete
+				bytes_read delete
+				user_id delete
+				duration delete
+				size delete
+				status delete
+				resp_headers delete
+			}
+		}
+	}
+
+	encode zstd gzip
+
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "SAMEORIGIN"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		-Server
+	}
+
+	handle_errors {
+		@not_found expression `{http.error.status_code} == 404`
+		rewrite @not_found /404.html
+		file_server
+	}
+
+	route {
+		log_append visitor_user_agent {http.request.header.User-Agent}
+
+		@www host www.miryolove.org
+		redir @www https://miryolove.org{uri} 301
+
+		redir /index.html / 301
+		redir /projects/miryolove-ai.html /miryolove-ai/ 301
+		redir /projects/miryolove-server.html /miryolove-server/ 301
+		redir /projects/git-service.html /git-service/ 301
+		redir /privacy.html /privacy-policy/ 301
+		redir /cookies.html /cookies/ 301
+		redir /terms.html /terms-of-use/ 301
+		redir /roadmap.html / 301
+		redir /changelog.html /changelog/ 301
+		redir /philosophy.html /philosophy/ 301
+		redir /roadmap / 301
+		redir /roadmap/ / 301
+
+		@missing_slash path /miryolove-ai /miryolove-server /git-service /privacy-policy /cookies /terms-of-use /changelog /philosophy
+		redir @missing_slash {path}/ 301
+
+		@ai path /miryolove-ai/
+		rewrite @ai /projects/miryolove-ai.html
+		@server path /miryolove-server/
+		rewrite @server /projects/miryolove-server.html
+		@git path /git-service/
+		rewrite @git /projects/git-service.html
+		@privacy path /privacy-policy/
+		rewrite @privacy /privacy.html
+		@cookies path /cookies/
+		rewrite @cookies /cookies.html
+		@terms path /terms-of-use/
+		rewrite @terms /terms.html
+		@changelog path /changelog/
+		rewrite @changelog /changelog.html
+		@philosophy path /philosophy/
+		rewrite @philosophy /philosophy.html
+
+		file_server
+	}
+}
+
+ai.miryolove.org {
+	encode zstd gzip
+
+	root * /mnt/Manchild/Project/MiryoLove/Web/2
+
+	handle /api/* {
+		reverse_proxy 127.0.0.1:3001 {
+			flush_interval -1
+		}
+	}
+
+	handle /health* {
+		reverse_proxy 127.0.0.1:3001
+	}
+
+	handle {
+		file_server
+	}
+}
+
+press.miryolove.org {
+	encode zstd gzip
+
+	@api path /api/*
+	handle @api {
+		reverse_proxy 127.0.0.1:4000
+	}
+
+	handle {
+		reverse_proxy 127.0.0.1:3000
+	}
+}

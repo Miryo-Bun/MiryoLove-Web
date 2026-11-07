@@ -1,0 +1,53 @@
+<!doctype html>
+<!--
+Copyright © 2026 Bogdan Melnikov.
+
+MiryoLove is an independent project created by Bogdan Melnikov.
+
+All original source code, project architecture, documentation, and original materials are protected under applicable copyright laws.
+
+Third-party libraries, dependencies, and other external materials remain distributed under their respective licenses.
+-->
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#faf9ff" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="Страница не найдена. Вернитесь на главную MiryoLove или посмотрите проекты." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Страница не найдена — MiryoLove" />
+    <meta property="og:description" content="Страница не найдена. Вернитесь на главную MiryoLove или посмотрите проекты." />
+    <meta property="og:locale" content="ru_RU" />
+    <link rel="icon" type="image/png" href="/logos/MiryoLove.png" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Страница не найдена — MiryoLove</title>
+  </head>
+  <body data-page-title-key="notFoundTitle" data-page-description-key="notFoundDescription">
+    <a class="skip-link" href="#main" data-i18n="skip">Перейти к содержимому</a>
+    <main id="main" class="not-found-page" data-root="/">
+      <header class="not-found-header">
+        <a class="brand" href="/" aria-label="MiryoLove">
+          <img src="/logos/MiryoLove.png" alt="" width="44" height="44" />
+          <span class="brand-name">MiryoLove</span>
+        </a>
+        <div class="language-switch" role="group" aria-label="Язык сайта" data-i18n-aria-label="language">
+          <button type="button" class="language-button is-active" data-language="ru" aria-pressed="true">RU</button>
+          <button type="button" class="language-button" data-language="en" aria-pressed="false">EN</button>
+        </div>
+      </header>
+
+      <section class="not-found-panel" aria-labelledby="not-found-title">
+        <span class="not-found-code" aria-hidden="true">404</span>
+        <p class="not-found-eyebrow">MiryoLove</p>
+        <h1 id="not-found-title" data-i18n="notFoundHeading">Страница не найдена</h1>
+        <p class="not-found-description" data-i18n="notFoundText">Похоже, такой страницы нет или она была перемещена.</p>
+        <div class="not-found-actions">
+          <a class="button button-primary" href="/" data-i18n="notFoundHome">На главную</a>
+          <a class="button button-secondary" href="/#projects" data-i18n="notFoundProjects">К проектам</a>
+        </div>
+      </section>
+    </main>
+    <script src="/script.js" defer></script>
+  </body>
+</html>

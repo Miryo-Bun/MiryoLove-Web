@@ -20,11 +20,9 @@ const translations = {
     navAbout: "О проекте",
     navPrinciples: "Принципы",
     navCommunity: "Сообщество",
-    navRoadmap: "Дорожная карта",
     github: "GitHub",
     altMiryoLove: "Логотип MiryoLove",
     altAiLogo: "Логотип MiryoLove AI",
-    altBoardLogo: "Логотип MiryoBoard",
     altServerLogo: "Логотип MiryoLove Server",
     heroEyebrow: "Независимый технологический проект",
     heroDescription: "Создаём программное обеспечение, исследуем возможности искусственного интеллекта и делимся техническими знаниями — открыто и с заботой о людях.",
@@ -44,9 +42,8 @@ const translations = {
     filterAvailable: "Доступно",
     learnMore: "Подробнее",
     projectDetails: "Подробнее",
-    openAi: "Открыть MiryoLove AI",
-    openBoard: "Открыть MiryoBoard",
-    openArrow: "Открыть",
+    openAi: "Перейти к модели",
+    openArrow: "Перейти к модели",
     comingSoon: "Скоро",
     gitServiceName: "Git-сервис",
     gitServiceDescription: "Идея будущего сервиса для размещения и совместной разработки исходного кода.",
@@ -57,7 +54,6 @@ const translations = {
     aiStatusAvailable: "Доступна",
     serverStatusAvailable: "Доступен",
     aiDescription: "Независимый проект в области искусственного интеллекта и разработки собственного AI-ассистента.",
-    boardDescription: "Независимая анонимная имиджборда MiryoBoard находится в разработке.",
     serverDescription: "Внутренняя серверная инфраструктура и backend-компоненты для проектов MiryoLove.",
     statusNote: "Доступность внешних адресов не подтверждена.",
     aboutStickerOne: "Открытость",
@@ -100,22 +96,8 @@ const translations = {
     footerResources: "Другие разделы",
     changelogPageTitle: "Журнал обновлений",
     philosophyPageTitle: "Философия",
-    roadmapPageTitle: "Дорожная карта",
-    roadmapDescription: "Подтверждённые направления развития MiryoLove и текущий статус проектов.",
     changelogDescription: "Подтверждённые изменения MiryoLove Web без вымышленных дат и номеров версий.",
     philosophyDescription: "Ценности и подход MiryoLove: свобода программного обеспечения, приватность, открытые знания и сотрудничество.",
-    roadmapIntro: "Сводка известных направлений и задач. Здесь нет процентов готовности, сроков выпуска или неподтверждённых обещаний.",
-    roadmapFilters: "Фильтр по статусу",
-    roadmapNoFilterMatches: "Для выбранного статуса проектов пока нет.",
-    roadmapFilterAll: "Все",
-    roadmapCompleted: "Завершено",
-    roadmapInProgress: "В разработке",
-    roadmapPlanned: "Запланировано",
-    roadmapCompletedTasks: "Завершено",
-    roadmapCurrentTasks: "Текущий статус",
-    roadmapPlannedTasks: "Подтверждённые планы",
-    roadmapNoTasks: "Отдельные задачи этого типа пока не подтверждены.",
-    roadmapProjectLink: "Страница проекта",
     changelogIntro: "Журнал фиксирует известные изменения сайта. Точные даты и версии не добавлены, если они не были подтверждены.",
     changelogUndated: "Без точной даты",
     changelogProject: "Проект",
@@ -134,20 +116,26 @@ const translations = {
     cookiesPolicyLink: "Политика cookies",
     termsLink: "Условия использования",
     cookieNoticeTitle: "Использование файлов cookie",
-    cookieNoticeText: "MiryoLove Web не устанавливает HTTP-файлы cookie и не использует необязательные cookies, рекламные трекеры или аналитику. В браузере сохраняются выбранный язык сайта и закрытие этого уведомления в рамках сессии вкладки. Подробнее — в политике использования cookies.",
+    cookieNoticeText: "Сайт не устанавливает HTTP-cookie. Язык сохраняется в localStorage, а закрытие уведомления — в sessionStorage до конца сессии вкладки. Эти значения не отправляются в запросах. «Понятно» только закрывает уведомление.",
     cookieNoticeLink: "Политика использования cookies",
     cookieNoticeDismiss: "Понятно",
     privacyPageTitle: "Конфиденциальность",
     cookiesPageTitle: "Политика cookies",
     termsPageTitle: "Условия использования",
     legalIntro: "Эта информация описывает фактическое поведение статического сайта MiryoLove Web. Это не юридическое заключение.",
-    legalUpdated: "Обновлено: 4 ноября 2026 года.",
+    legalUpdated: "Обновлено: 7 ноября 2026 года.",
     backToSite: "Вернуться на сайт",
     backToTop: "Наверх",
     backToProjects: "К списку проектов",
     breadcrumb: "Навигационная цепочка",
     pageTitle: "MiryoLove — Freedom through technology.",
-    metaDescription: "MiryoLove — независимый технологический проект: программное обеспечение, искусственный интеллект и открытые знания."
+    metaDescription: "MiryoLove — независимый технологический проект: программное обеспечение, искусственный интеллект и открытые знания.",
+    notFoundTitle: "Страница не найдена — MiryoLove",
+    notFoundDescription: "Страница не найдена. Вернитесь на главную MiryoLove или посмотрите проекты.",
+    notFoundHeading: "Страница не найдена",
+    notFoundText: "Похоже, такой страницы нет или она была перемещена.",
+    notFoundHome: "На главную",
+    notFoundProjects: "К проектам"
   },
   en: {
     skip: "Skip to content",
@@ -160,11 +148,9 @@ const translations = {
     navAbout: "About",
     navPrinciples: "Principles",
     navCommunity: "Community",
-    navRoadmap: "Roadmap",
     github: "GitHub",
     altMiryoLove: "MiryoLove logo",
     altAiLogo: "MiryoLove AI logo",
-    altBoardLogo: "MiryoBoard logo",
     altServerLogo: "MiryoLove Server logo",
     heroEyebrow: "Independent technology project",
     heroDescription: "We build software, explore the possibilities of artificial intelligence, and share technical knowledge—with openness and care for people.",
@@ -184,9 +170,8 @@ const translations = {
     filterAvailable: "Available",
     learnMore: "Learn more",
     projectDetails: "Details",
-    openAi: "Open MiryoLove AI",
-    openBoard: "Open MiryoBoard",
-    openArrow: "Open",
+    openAi: "Go to model",
+    openArrow: "Go to model",
     comingSoon: "Coming soon",
     gitServiceName: "Git service",
     gitServiceDescription: "An idea for a future service for hosting and collaborating on source code.",
@@ -197,7 +182,6 @@ const translations = {
     aiStatusAvailable: "Available",
     serverStatusAvailable: "Available",
     aiDescription: "An independent artificial intelligence project focused on developing its own AI assistant.",
-    boardDescription: "MiryoBoard is an independent anonymous imageboard in development.",
     serverDescription: "Internal server infrastructure and backend components supporting MiryoLove projects.",
     statusNote: "Availability of external addresses has not been confirmed.",
     aboutStickerOne: "Open by design",
@@ -240,22 +224,8 @@ const translations = {
     footerResources: "Explore",
     changelogPageTitle: "Changelog",
     philosophyPageTitle: "Philosophy",
-    roadmapPageTitle: "Roadmap",
-    roadmapDescription: "Confirmed MiryoLove development areas and the current status of each project.",
     changelogDescription: "Confirmed MiryoLove Web changes, without invented dates or version numbers.",
     philosophyDescription: "MiryoLove values and approach: software freedom, privacy, open knowledge, and collaboration.",
-    roadmapIntro: "A summary of known directions and tasks. No completion percentages, release dates, or unconfirmed promises are included.",
-    roadmapFilters: "Filter by status",
-    roadmapNoFilterMatches: "No projects currently have this status.",
-    roadmapFilterAll: "All",
-    roadmapCompleted: "Completed",
-    roadmapInProgress: "In progress",
-    roadmapPlanned: "Planned",
-    roadmapCompletedTasks: "Completed",
-    roadmapCurrentTasks: "Current status",
-    roadmapPlannedTasks: "Confirmed plans",
-    roadmapNoTasks: "No separate tasks of this type have been confirmed.",
-    roadmapProjectLink: "Project page",
     changelogIntro: "This log records known website changes. Exact dates and versions are omitted where they have not been confirmed.",
     changelogUndated: "Undated",
     changelogProject: "Project",
@@ -274,20 +244,26 @@ const translations = {
     cookiesPolicyLink: "Cookie policy",
     termsLink: "Terms of use",
     cookieNoticeTitle: "Cookie Usage",
-    cookieNoticeText: "MiryoLove Web does not set HTTP cookies or use optional cookies, advertising trackers, or analytics. Your selected site language and dismissal of this notice for the current tab session are stored in your browser. Learn more in our Cookie Policy.",
+    cookieNoticeText: "This site does not set HTTP cookies. Your language is stored in localStorage, and notice dismissal in sessionStorage until this tab session ends. These values are not sent in requests. “Got it” only dismisses this notice.",
     cookieNoticeLink: "Cookie Policy",
     cookieNoticeDismiss: "Got it",
     privacyPageTitle: "Privacy",
     cookiesPageTitle: "Cookie policy",
     termsPageTitle: "Terms of use",
     legalIntro: "This page describes the actual behavior of the static MiryoLove Web site. It is not legal advice.",
-    legalUpdated: "Updated: November 4, 2026.",
+    legalUpdated: "Updated: November 7, 2026.",
     backToSite: "Back to the site",
     backToTop: "Back to top",
     backToProjects: "Back to projects",
     breadcrumb: "Breadcrumb",
     pageTitle: "MiryoLove — Freedom through technology.",
-    metaDescription: "MiryoLove is an independent technology project focused on software, artificial intelligence, and open knowledge."
+    metaDescription: "MiryoLove is an independent technology project focused on software, artificial intelligence, and open knowledge.",
+    notFoundTitle: "Page not found — MiryoLove",
+    notFoundDescription: "Page not found. Return to the MiryoLove homepage or explore its projects.",
+    notFoundHeading: "Page not found",
+    notFoundText: "This page may have moved or may no longer be available.",
+    notFoundHome: "Back to home",
+    notFoundProjects: "Explore projects"
   }
 };
 
@@ -314,7 +290,7 @@ const legalPages = {
         {
           title: "Сетевые запросы и получатели",
           paragraphs: [
-            "При открытии страниц браузер запрашивает файлы этого сайта: HTML, CSS, JavaScript и изображения. Поставщик хостинга может технически получать IP-адрес и сведения о запросах в рамках работы сервера. Поставщик, состав журналов и сроки их хранения не определены в исходниках сайта и должны быть уточнены владельцем до публикации.",
+            "Для доставки страниц сервер кратковременно обрабатывает IP-адрес источника соединения и параметры запроса. В активной конфигурации Caddy отдельный журнал запросов основного сайта сейчас не включён; Caddy передаёт системные диагностические сообщения, а также сообщения TLS и ACME в системный журнал systemd. В подготовленной, но ещё не применённой конфигурации журнал запросов будет записывать только время запроса в UTC и исходное значение заголовка User-Agent в /var/log/caddy/miryolove-access.json; журнал будет ротироваться и храниться не дольше 14 дней. В JSON-записях также остаются служебные поля Caddy. IP-адрес, путь и параметры URL, заголовок Referer, файлы cookie и остальные заголовки удаляются из этого журнала. Фильтр не охватывает отдельные ошибки Caddy во время работы: они могут содержать IP-адрес или сведения о запросе. Срок хранения и доступ к системному журналу systemd не подтверждены; его общий размер на дату проверки — 1,2 ГБ, но это не срок хранения. Конфигурация ещё не применена, поэтому фактические серверные журналы следует проверить после согласованного переключения.",
             "Если вы сами переходите по внешней ссылке, ваш браузер связывается с выбранным внешним сервисом. Его обработка данных регулируется правилами этого сервиса; MiryoLove Web не встраивает его содержимое."
           ]
         },
@@ -328,7 +304,7 @@ const legalPages = {
         {
           title: "Контакт и вопросы владельцу",
           paragraphs: [
-            "Публичный контакт для запросов о конфиденциальности в материалах проекта не указан. До публикации сайта владелец должен добавить рабочий официальный способ связи и подтвердить сведения о хостинге, серверных журналах, их получателях и сроках хранения."
+            "Публичный контакт для запросов о конфиденциальности в материалах проекта не указан. Владелец должен опубликовать рабочий официальный способ связи и подтвердить сведения о хостинге, серверных журналах, их получателях и сроках хранения."
           ]
         }
       ]
@@ -346,7 +322,7 @@ const legalPages = {
         {
           title: "HTTP-cookie",
           paragraphs: [
-            "Проверенные исходный код и ответы публичных страниц MiryoLove Web не содержат установки HTTP-cookie: при проверке ответов главной страницы, JavaScript-файла и этой политики заголовок Set-Cookie не обнаружен. Код сайта не обращается к document.cookie. Результат относится к проверенным страницам и моменту аудита; конфигурацию сервера и ответы иных маршрутов следует перепроверять после изменений.",
+            "7 ноября 2026 года заголовок Set-Cookie не обнаружен в GET-ответах главной страницы, девяти канонических страниц, JavaScript, CSS, sitemap.xml, robots.txt и проверочного неизвестного URL. Код сайта не обращается к document.cookie. Проверка относится к этим публичным маршрутам и дате аудита; другие методы, host blocks и конфигурацию сервера следует проверять отдельно и повторять после изменений.",
             "Необязательные cookies и другие технологии отслеживания, для которых требовался бы выбор пользователя, не используются. Поэтому уведомление носит информационный характер, а кнопка «Понятно» не является согласием."
           ]
         },
@@ -440,7 +416,7 @@ const legalPages = {
         {
           title: "Network requests and recipients",
           paragraphs: [
-            "When you open a page, your browser requests this site's HTML, CSS, JavaScript, and images. The hosting provider may technically receive your IP address and request details to operate the server. The provider, access-log contents, and retention periods are not specified in the website source and must be confirmed by the owner before publication.",
+            "To deliver a page, the server briefly processes the connection's source IP address and request details. The active Caddy configuration currently has no dedicated access log for the main site; Caddy sends system diagnostic, TLS, and ACME messages to the systemd journal. A prepared but not yet applied access log will retain only the UTC time and raw User-Agent from request data in /var/log/caddy/miryolove-access.json for at most 14 days with rotation; static Caddy metadata fields also remain in each JSON record. The IP address, URL path and query, Referer, cookies, and other headers are removed from that access log. This filter does not cover separate Caddy runtime errors, which may contain IP addresses or request details. systemd journal retention and access are unconfirmed; its total size at review was 1.2 GB, which is not a retention period. The configuration is not active yet, so actual production logs must be checked after an approved switch.",
             "If you choose to follow an external link, your browser connects to that external service. Its own privacy terms govern its data handling; MiryoLove Web does not embed its content."
           ]
         },
@@ -454,7 +430,7 @@ const legalPages = {
         {
           title: "Contact and owner follow-up",
           paragraphs: [
-            "Project materials do not provide a public privacy contact. Before publishing the site, its owner should add an official working contact method and confirm hosting, server logs, recipients, and retention details."
+            "Project materials do not provide a public privacy contact. The owner should publish a working official contact method and confirm hosting, server logs, recipients, and retention details."
           ]
         }
       ]
@@ -472,7 +448,7 @@ const legalPages = {
         {
           title: "HTTP cookies",
           paragraphs: [
-            "The reviewed source code and public MiryoLove Web responses did not show HTTP cookie setting: no Set-Cookie header was found on the homepage, JavaScript file, or this policy page at the time of review. The site code does not access document.cookie. This result applies to the checked pages and audit date; server configuration and other routes should be rechecked after changes.",
+            "On November 7, 2026, no Set-Cookie header was found in GET responses for the homepage, nine canonical pages, JavaScript, CSS, sitemap.xml, robots.txt, or a checked unknown URL. The site code does not access document.cookie. This check covers those public routes and that audit date; other methods, host blocks, and server configuration require separate review and rechecking after changes.",
             "No optional cookies or other tracking technologies requiring user choice are used. The notice is informational, and the Got it button is not consent."
           ]
         },
@@ -568,39 +544,12 @@ const projectPages = {
       ],
       status: "available",
       statusLabelKey: "aiStatusAvailable",
-      statusNote: "Проект доступен по указанному адресу; функции модели не подтверждены.",
-      address: "https://ai.miryolove.org/",
-      addressLabel: "Указанный адрес; доступность не подтверждена",
+      statusNote: "Страница модели MiryoLove-7B размещена на Hugging Face; функциональность модели не проверена.",
+      address: "https://huggingface.co/MiryoBun/MiryoLove-7B",
+      addressLabel: "Страница модели",
       action: { key: "openAi", disabled: false },
       logo: "miryolove-ai.jpg",
       logoAlt: "Логотип проекта MiryoLove AI",
-      screenshot: null
-    },
-    board: {
-      title: "MiryoBoard",
-      metaTitle: "MiryoBoard — независимая анонимная имиджборда | MiryoLove",
-      metaDescription: "MiryoBoard — независимая анонимная имиджборда, находящаяся в разработке.",
-      eyebrow: "Техническое сообщество",
-      tagline: "Независимая анонимная имиджборда в разработке.",
-      intro: "MiryoBoard — независимый проект анонимной имиджборды, который находится в разработке.",
-      detailsTitle: "О проекте",
-      details: [
-        "Проект посвящён созданию отдельной площадки для анонимных обсуждений.",
-        "Сервис находится в разработке; доступность и функции публичной версии не подтверждены."
-      ],
-      featuresTitle: "Направление проекта",
-      features: [
-        ["Независимый проект", "MiryoBoard развивается как отдельное направление MiryoLove."],
-        ["Анонимная имиджборда", "Таково заявленное назначение проекта."],
-        ["Разработка продолжается", "Не заявляем о неподтверждённых возможностях публичной версии."]
-      ],
-      status: "development",
-      statusNote: "Проект находится в разработке; публичная версия не подтверждена.",
-      address: "https://board.miryolove.org/",
-      addressLabel: "Адрес MiryoBoard",
-      action: { key: "openBoard", disabled: false },
-      logo: "MiryoBoard.jpg",
-      logoAlt: "Логотип проекта MiryoBoard",
       screenshot: null
     },
     server: {
@@ -678,39 +627,12 @@ const projectPages = {
       ],
       status: "available",
       statusLabelKey: "aiStatusAvailable",
-      statusNote: "The project is available at the listed address; model capabilities have not been confirmed.",
-      address: "https://ai.miryolove.org/",
-      addressLabel: "Listed address; availability not confirmed",
+      statusNote: "The MiryoLove-7B model page is hosted on Hugging Face; model functionality has not been verified.",
+      address: "https://huggingface.co/MiryoBun/MiryoLove-7B",
+      addressLabel: "Model page",
       action: { key: "openAi", disabled: false },
       logo: "miryolove-ai.jpg",
       logoAlt: "MiryoLove AI project logo",
-      screenshot: null
-    },
-    board: {
-      title: "MiryoBoard",
-      metaTitle: "MiryoBoard — independent anonymous imageboard | MiryoLove",
-      metaDescription: "MiryoBoard is an independent anonymous imageboard in development.",
-      eyebrow: "Technical community",
-      tagline: "An independent anonymous imageboard in development.",
-      intro: "MiryoBoard is an independent anonymous imageboard project in development.",
-      detailsTitle: "About the project",
-      details: [
-        "The project is focused on creating a dedicated space for anonymous discussion.",
-        "The service is in development; the availability and features of a public version have not been confirmed."
-      ],
-      featuresTitle: "Project direction",
-      features: [
-        ["Independent project", "MiryoBoard is developed as a separate MiryoLove direction."],
-        ["Anonymous imageboard", "This is the project's stated purpose."],
-        ["In development", "No unconfirmed public-version features are claimed."]
-      ],
-      status: "development",
-      statusNote: "The project is in development; a public version has not been confirmed.",
-      address: "https://board.miryolove.org/",
-      addressLabel: "MiryoBoard address",
-      action: { key: "openBoard", disabled: false },
-      logo: "MiryoBoard.jpg",
-      logoAlt: "MiryoBoard project logo",
       screenshot: null
     },
     server: {
@@ -771,62 +693,6 @@ const projectPages = {
 
 const resourcePages = {
   ru: {
-    roadmap: {
-      title: "Дорожная карта MiryoLove",
-      description: translations.ru.roadmapDescription,
-      intro: translations.ru.roadmapIntro,
-      projects: [
-        {
-          name: "MiryoLove Web",
-          summary: "Статический сайт и информационные страницы экосистемы MiryoLove.",
-          href: "index.html",
-          status: "in-progress",
-          completed: [
-            "Создан статический сайт с переключением русского и английского языков и сохранением выбора.",
-            "Добавлены отдельные страницы проектов и переключение между русским и английским интерфейсами.",
-            "Добавлены информационное уведомление о cookies и страницы политик."
-          ],
-          current: ["Сайт развивается постепенно; подтверждённый график релизов не объявлен."],
-          planned: []
-        },
-        {
-          name: "MiryoLove AI",
-          summary: "Независимый ИИ-помощник как направление разработки; публичная версия не подтверждена.",
-          href: "projects/miryolove-ai.html",
-          status: "in-progress",
-          completed: [],
-          current: ["Заявленное направление — независимый ИИ-помощник и изучение ИИ. Подключённая модель и публичная версия не подтверждены."],
-          planned: []
-        },
-        {
-          name: "MiryoBoard",
-          summary: "Независимая анонимная имиджборда, находящаяся в разработке.",
-          href: "projects/miryoboard.html",
-          status: "in-progress",
-          completed: [],
-          current: ["Заявленное направление — независимая анонимная имиджборда; доступность и функции публичной версии не подтверждены."],
-          planned: []
-        },
-        {
-          name: "MiryoLove Server",
-          summary: "Backend-проект с описанными компонентами API; публичное развёртывание не подтверждено.",
-          href: "projects/miryolove-server.html",
-          status: "in-progress",
-          completed: ["В исходном коде и документации описаны REST API для учётных записей, профилей и чатов, а также хранение данных с PostgreSQL и Prisma."],
-          current: ["Поставщик ИИ-модели не настроен; публичное развёртывание backend не подтверждено."],
-          planned: []
-        },
-        {
-          name: "Будущий Git-сервис",
-          summary: "Планируемая идея размещения исходного кода и совместной разработки.",
-          href: "projects/git-service.html",
-          status: "planned",
-          completed: [],
-          current: [],
-          planned: ["Рассматривается идея сервиса для размещения исходного кода и совместной разработки; развёрнутый сервис не подтверждён."]
-        }
-      ]
-    },
     changelog: {
       title: "Журнал обновлений",
       description: translations.ru.changelogDescription,
@@ -838,7 +704,7 @@ const resourcePages = {
         { title: "Обновлены визуальный стиль и взаимодействия", project: "MiryoLove Web", type: "improvement", description: "Усилены glassmorphism, адаптивность и мягкие анимации; учтена настройка уменьшения движения." },
         { title: "Добавлено уведомление о cookies", project: "MiryoLove Web", type: "feature", description: "Добавлено двуязычное информационное уведомление; необязательные cookies и трекеры не используются." },
         { title: "Опубликованы страницы политик", project: "MiryoLove Web", type: "documentation", description: "Добавлены страницы конфиденциальности, cookies и условий использования с описанием фактического поведения сайта и неизвестных сведений, требующих подтверждения владельцем." },
-        { title: "Добавлены страницы дорожной карты, обновлений и философии", project: "MiryoLove Web", type: "feature", description: "Созданы новые разделы на русском и английском языках; даты и выпуски не указываются без подтверждения." }
+        { title: "Добавлены журнал обновлений и философия", project: "MiryoLove Web", type: "feature", description: "Добавлены двуязычные информационные разделы без неподтверждённых дат и обещаний." }
       ]
     },
     philosophy: {
@@ -857,62 +723,6 @@ const resourcePages = {
     }
   },
   en: {
-    roadmap: {
-      title: "MiryoLove roadmap",
-      description: translations.en.roadmapDescription,
-      intro: translations.en.roadmapIntro,
-      projects: [
-        {
-          name: "MiryoLove Web",
-          summary: "The static website and information pages for the MiryoLove ecosystem.",
-          href: "index.html",
-          status: "in-progress",
-          completed: [
-            "A static website with Russian and English interfaces and saved language preference.",
-            "Dedicated project pages and Russian/English interface switching.",
-            "An informational cookie notice and policy pages."
-          ],
-          current: ["The site continues to develop incrementally; no confirmed release schedule has been announced."],
-          planned: []
-        },
-        {
-          name: "MiryoLove AI",
-          summary: "An independent AI assistant is a development direction; a public version is unconfirmed.",
-          href: "projects/miryolove-ai.html",
-          status: "in-progress",
-          completed: [],
-          current: ["The stated direction is an independent AI assistant and AI exploration. A connected model and public release have not been confirmed."],
-          planned: []
-        },
-        {
-          name: "MiryoBoard",
-          summary: "An independent anonymous imageboard in development.",
-          href: "projects/miryoboard.html",
-          status: "in-progress",
-          completed: [],
-          current: ["The stated direction is an independent anonymous imageboard; the availability and features of a public version have not been confirmed."],
-          planned: []
-        },
-        {
-          name: "MiryoLove Server",
-          summary: "A backend project with documented API components; a public deployment is unconfirmed.",
-          href: "projects/miryolove-server.html",
-          status: "in-progress",
-          completed: ["The source code and documentation describe REST API operations for accounts, profiles, and chats, with PostgreSQL and Prisma persistence."],
-          current: ["No AI model provider is configured; a public backend deployment has not been confirmed."],
-          planned: []
-        },
-        {
-          name: "Future Git service",
-          summary: "A planned idea for source-code hosting and collaborative development.",
-          href: "projects/git-service.html",
-          status: "planned",
-          completed: [],
-          current: [],
-          planned: ["An idea for source-code hosting and collaborative development is being considered; no deployed service has been confirmed."]
-        }
-      ]
-    },
     changelog: {
       title: "Changelog",
       description: translations.en.changelogDescription,
@@ -924,7 +734,7 @@ const resourcePages = {
         { title: "Refined the visual style and interactions", project: "MiryoLove Web", type: "improvement", description: "Enhanced glassmorphism, responsive behavior, and subtle animations, including reduced-motion support." },
         { title: "Added a cookie notice", project: "MiryoLove Web", type: "feature", description: "Added a bilingual informational notice; no optional cookies or trackers are used." },
         { title: "Published policy pages", project: "MiryoLove Web", type: "documentation", description: "Added privacy, cookie, and terms pages describing actual site behavior and unknown details that require owner confirmation." },
-        { title: "Added roadmap, changelog, and philosophy pages", project: "MiryoLove Web", type: "feature", description: "Created the new sections in Russian and English; no dates or releases are claimed without confirmation." }
+        { title: "Added a changelog and philosophy section", project: "MiryoLove Web", type: "feature", description: "Added bilingual informational sections without unconfirmed dates or promises." }
       ]
     },
     philosophy: {
@@ -951,7 +761,7 @@ const storageKey = "miryolove-language";
 const noticeDismissedStorageKey = "miryolove-cookie-notice-dismissed-v1";
 
 function getSiteRoot() {
-  return document.querySelector("[data-root]")?.dataset.root || (location.pathname.includes("/projects/") ? "../" : "./");
+  return document.querySelector("[data-root]")?.dataset.root || "/";
 }
 
 function getSavedLanguage() {
@@ -989,9 +799,9 @@ function initializePrivacyLinks() {
     column.className = "footer-column footer-policy-links";
     column.innerHTML = `
       <h2 data-i18n="privacyLinksTitle"></h2>
-      <a href="${root}privacy.html" data-i18n="privacyPolicyLink"></a>
-      <a href="${root}cookies.html" data-i18n="cookiesPolicyLink"></a>
-      <a href="${root}terms.html" data-i18n="termsLink"></a>`;
+      <a href="${root}privacy-policy/" data-i18n="privacyPolicyLink"></a>
+      <a href="${root}cookies/" data-i18n="cookiesPolicyLink"></a>
+      <a href="${root}terms-of-use/" data-i18n="termsLink"></a>`;
     footer.append(column);
   }
   if (!footer.querySelector(".footer-resources-column")) {
@@ -999,9 +809,8 @@ function initializePrivacyLinks() {
     column.className = "footer-column footer-resources-column";
     column.innerHTML = `
       <h2 data-i18n="footerResources"></h2>
-      <a href="${root}roadmap.html" data-i18n="roadmapPageTitle"></a>
-      <a href="${root}changelog.html" data-i18n="changelogPageTitle"></a>
-      <a href="${root}philosophy.html" data-i18n="philosophyPageTitle"></a>`;
+      <a href="${root}changelog/" data-i18n="changelogPageTitle"></a>
+      <a href="${root}philosophy/" data-i18n="philosophyPageTitle"></a>`;
     footer.append(column);
   }
   const elsewhere = [...footer.querySelectorAll(".footer-column")].find((column) =>
@@ -1009,20 +818,11 @@ function initializePrivacyLinks() {
   );
   if (elsewhere && !footer.querySelector('[data-i18n="footerContact"]')) {
     const contact = document.createElement("a");
-    contact.href = `${root}index.html#contact-details`;
+    contact.href = `${root}#contact-details`;
     contact.dataset.i18n = "footerContact";
     contact.textContent = translations[document.documentElement.lang].footerContact;
     elsewhere.append(contact);
   }
-}
-
-function initializeResourceNavigation() {
-  if (!navigation || navigation.querySelector('[data-i18n="navRoadmap"]')) return;
-  const link = document.createElement("a");
-  link.href = `${getSiteRoot()}roadmap.html`;
-  link.dataset.i18n = "navRoadmap";
-  link.addEventListener("click", closeMenu);
-  navigation.append(link);
 }
 
 function createCookieNotice() {
@@ -1039,7 +839,7 @@ function createCookieNotice() {
     <div class="cookie-notice-copy">
       <h2 id="cookie-notice-title" data-i18n="cookieNoticeTitle"></h2>
       <p id="cookie-notice-description" data-i18n="cookieNoticeText"></p>
-      <a href="${getSiteRoot()}cookies.html" data-i18n="cookieNoticeLink"></a>
+      <a href="${getSiteRoot()}cookies/" data-i18n="cookieNoticeLink"></a>
     </div>
     <div class="cookie-notice-actions">
       <button class="cookie-notice-button" type="button" data-i18n="cookieNoticeDismiss"></button>
@@ -1101,14 +901,14 @@ function renderLegalPage(language) {
   const root = legalMain.dataset.root || "./";
   const back = document.createElement("a");
   back.className = "button button-secondary legal-back-link";
-  back.href = `${root}index.html`;
+  back.href = `${root}`;
   back.textContent = translations[language].backToSite;
 
   const breadcrumb = document.createElement("nav");
   breadcrumb.className = "project-breadcrumb";
   breadcrumb.setAttribute("aria-label", translations[language].breadcrumb);
   const breadcrumbLink = document.createElement("a");
-  breadcrumbLink.href = `${root}index.html`;
+  breadcrumbLink.href = `${root}`;
   breadcrumbLink.textContent = translations[language].navHome;
   const breadcrumbCurrent = document.createElement("span");
   breadcrumbCurrent.setAttribute("aria-current", "page");
@@ -1177,7 +977,7 @@ function renderResourcePage(language) {
   breadcrumb.className = "project-breadcrumb";
   breadcrumb.setAttribute("aria-label", dictionary.resourceBreadcrumb);
   const homeLink = document.createElement("a");
-  homeLink.href = `${root}index.html#home`;
+  homeLink.href = `${root}#home`;
   homeLink.textContent = dictionary.navHome;
   const separator = document.createElement("span");
   separator.setAttribute("aria-hidden", "true");
@@ -1196,92 +996,7 @@ function renderResourcePage(language) {
   const content = document.createElement("div");
   content.className = `resource-content resource-${main.dataset.resource}`;
 
-  if (main.dataset.resource === "roadmap") {
-    const filterGroup = document.createElement("div");
-    filterGroup.className = "resource-filters";
-    filterGroup.setAttribute("role", "group");
-    filterGroup.setAttribute("aria-label", dictionary.roadmapFilters);
-    [
-      ["all", dictionary.roadmapFilterAll],
-      ["completed", dictionary.roadmapCompleted],
-      ["in-progress", dictionary.roadmapInProgress],
-      ["planned", dictionary.roadmapPlanned]
-    ].forEach(([status, label], index) => {
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = `project-filter${index === 0 ? " is-active" : ""}`;
-      button.dataset.roadmapFilter = status;
-      button.setAttribute("aria-pressed", String(index === 0));
-      button.textContent = label;
-      filterGroup.append(button);
-    });
-    const timeline = document.createElement("div");
-    timeline.className = "roadmap-timeline";
-    resource.projects.forEach((project) => {
-      const card = document.createElement("article");
-      card.className = "roadmap-card glass-panel will-reveal";
-      card.dataset.roadmapStatus = project.status;
-      const cardHeading = document.createElement("div");
-      cardHeading.className = "roadmap-card-heading";
-      const name = document.createElement("h2");
-      name.textContent = project.name;
-      const status = document.createElement("span");
-      status.className = `roadmap-status roadmap-status-${project.status}`;
-      const statusLabels = {
-        completed: dictionary.roadmapCompleted,
-        "in-progress": dictionary.roadmapInProgress,
-        planned: dictionary.roadmapPlanned
-      };
-      status.textContent = statusLabels[project.status];
-      cardHeading.append(name, status);
-      card.append(cardHeading);
-      const summary = document.createElement("p");
-      summary.className = "roadmap-card-summary";
-      summary.textContent = project.summary;
-      card.append(summary);
-
-      [
-        ["completed", dictionary.roadmapCompletedTasks],
-        ["current", dictionary.roadmapCurrentTasks],
-        ["planned", dictionary.roadmapPlannedTasks]
-      ].forEach(([key, label]) => {
-        const group = document.createElement("section");
-        group.className = `roadmap-task-group roadmap-task-${key}`;
-        const groupHeading = document.createElement("h3");
-        groupHeading.textContent = label;
-        group.append(groupHeading);
-        const tasks = document.createElement("ul");
-        const values = project[key] || [];
-        if (values.length) {
-          values.forEach((text) => {
-            const item = document.createElement("li");
-            item.textContent = text;
-            tasks.append(item);
-          });
-        } else {
-          const item = document.createElement("li");
-          item.className = "roadmap-empty";
-          item.textContent = dictionary.roadmapNoTasks;
-          tasks.append(item);
-        }
-        group.append(tasks);
-        card.append(group);
-      });
-
-      const projectLink = document.createElement("a");
-      projectLink.className = "text-link roadmap-project-link";
-      projectLink.href = `${root}${project.href}`;
-      projectLink.textContent = dictionary.roadmapProjectLink;
-      card.append(projectLink);
-      timeline.append(card);
-    });
-    const emptyMessage = document.createElement("p");
-    emptyMessage.className = "resource-empty-message";
-    emptyMessage.setAttribute("aria-live", "polite");
-    emptyMessage.hidden = true;
-    emptyMessage.textContent = dictionary.roadmapNoFilterMatches;
-    content.append(filterGroup, emptyMessage, timeline);
-  } else if (main.dataset.resource === "changelog") {
+  if (main.dataset.resource === "changelog") {
     const section = document.createElement("section");
     section.className = "changelog-period";
     const periodHeading = document.createElement("h2");
@@ -1346,29 +1061,6 @@ function renderResourcePage(language) {
     canonical.href = main.dataset.canonical;
     document.querySelector('meta[property="og:url"]')?.setAttribute("content", canonical.href);
   }
-  if (main.dataset.resource === "roadmap") initializeRoadmapFilters();
-}
-
-function initializeRoadmapFilters() {
-  const buttons = document.querySelectorAll("[data-roadmap-filter]");
-  const cards = document.querySelectorAll(".roadmap-card[data-roadmap-status]");
-  buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const filter = button.dataset.roadmapFilter;
-      buttons.forEach((candidate) => {
-        const selected = candidate === button;
-        candidate.classList.toggle("is-active", selected);
-        candidate.setAttribute("aria-pressed", String(selected));
-      });
-      let shown = 0;
-      cards.forEach((card) => {
-        card.hidden = filter !== "all" && card.dataset.roadmapStatus !== filter;
-        if (!card.hidden) shown += 1;
-      });
-      const emptyMessage = document.querySelector(".resource-empty-message");
-      if (emptyMessage) emptyMessage.hidden = shown > 0;
-    });
-  });
 }
 
 function renderProjectPage(language) {
@@ -1378,7 +1070,7 @@ function renderProjectPage(language) {
   const project = projectPages[language]?.[projectMain.dataset.project];
   if (!project) return;
 
-  const root = projectMain.dataset.root || "../";
+  const root = projectMain.dataset.root || "/";
   const dictionary = translations[language];
   const statusLabels = {
     planned: dictionary.statusPlanned,
@@ -1420,7 +1112,7 @@ function renderProjectPage(language) {
 
   projectMain.innerHTML = `
     <nav class="project-breadcrumb" aria-label="${language === "ru" ? "Навигационная цепочка" : "Breadcrumb"}" data-i18n-aria-label="breadcrumb">
-      <a href="${root}index.html#projects" data-i18n="navProjects">${dictionary.navProjects}</a>
+      <a href="${root}#projects" data-i18n="navProjects">${dictionary.navProjects}</a>
       <span aria-hidden="true">/</span>
       <span aria-current="page">${project.title}</span>
     </nav>
@@ -1436,7 +1128,7 @@ function renderProjectPage(language) {
         </div>
         ${address}
         ${projectAction}
-        <a class="button button-primary" href="${root}index.html#projects">
+        <a class="button button-primary" href="${root}#projects">
           <span data-i18n="backToProjects">${dictionary.backToProjects}</span>
           <svg aria-hidden="true" viewBox="0 0 20 20" fill="none"><path d="M16 10H4m5 5-5-5 5-5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" /></svg>
         </a>
@@ -1463,7 +1155,7 @@ function renderProjectPage(language) {
       <div class="detail-feature-grid">${features}</div>
     </section>
     <div class="project-back-row">
-      <a class="button button-secondary" href="${root}index.html#projects">
+      <a class="button button-secondary" href="${root}#projects">
         <span data-i18n="backToProjects">${dictionary.backToProjects}</span>
         <svg aria-hidden="true" viewBox="0 0 20 20" fill="none"><path d="M16 10H4m5 5-5-5 5-5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" /></svg>
       </a>
@@ -1502,10 +1194,13 @@ function setLanguage(language, persist = true) {
   if (!dictionary) return;
 
   document.documentElement.lang = language;
-  document.title = dictionary.pageTitle;
-  document.querySelector('meta[name="description"]')?.setAttribute("content", dictionary.metaDescription);
-  document.querySelector('meta[property="og:title"]')?.setAttribute("content", dictionary.pageTitle);
-  document.querySelector('meta[property="og:description"]')?.setAttribute("content", dictionary.metaDescription);
+  const pageTitle = dictionary[document.body.dataset.pageTitleKey] || dictionary.pageTitle;
+  const pageDescription = dictionary[document.body.dataset.pageDescriptionKey] || dictionary.metaDescription;
+  document.title = pageTitle;
+  document.querySelector('meta[name="description"]')?.setAttribute("content", pageDescription);
+  document.querySelector('meta[property="og:title"]')?.setAttribute("content", pageTitle);
+  document.querySelector('meta[property="og:description"]')?.setAttribute("content", pageDescription);
+  document.querySelector('meta[property="og:locale"]')?.setAttribute("content", language === "ru" ? "ru_RU" : "en_US");
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const translation = dictionary[element.dataset.i18n];
@@ -1617,7 +1312,7 @@ function initializeProjectFilters() {
 let revealObserver;
 function initializeReveal() {
   const candidates = document.querySelectorAll(
-    ".hero-copy, .hero-art, .section-heading, .project-card, .about-copy, .about-visual, .principle-card, .community-link, .closing-section, .project-detail-art, .project-screenshot, .project-detail-block, .detail-feature-card, .roadmap-card, .changelog-entry, .philosophy-card"
+    ".hero-copy, .hero-art, .section-heading, .project-card, .about-copy, .about-visual, .principle-card, .community-link, .closing-section, .project-detail-art, .project-screenshot, .project-detail-block, .detail-feature-card, .changelog-entry, .philosophy-card"
   );
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (prefersReducedMotion || !("IntersectionObserver" in window)) {
@@ -1644,7 +1339,6 @@ function initializeReveal() {
 }
 
 initializeProjectFilters();
-initializeResourceNavigation();
 initializePrivacyLinks();
 createCookieNotice();
 removeObsoleteConsentChoice();
