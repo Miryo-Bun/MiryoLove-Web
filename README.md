@@ -26,24 +26,75 @@ Static, dependency-free MiryoLove website. The homepage, project pages, and shar
 - `/philosophy/` — MiryoLove values and approach in Russian and English.
 - Missing routes — branded bilingual not-found page; Caddy is configured to preserve HTTP 404 status.
 
-The HTML files remain the static route sources. Clean routes are directory indexes (`projects/index.html`, `news/index.html`, and so on) and work with Caddy's file server and Python's built-in static server. The current `/etc/caddy/Caddyfile` points to this site's root at `/mnt/Manchild/Project/MiryoLove/MiryoLove Web` and configures a filtered access log. The files under `deploy/` are reference material only; they do not represent the active full configuration and must not be applied without a separate review.
+## Architecture & Structure
+
+The HTML files remain the static route sources. Clean routes are directory indexes (`projects/index.html`, `news/index.html`, and so on) and work with Caddy's file server and Python's built-in static server.
+
+The current `/etc/caddy/Caddyfile` points to this site's root at `/mnt/Manchild/Project/MiryoLove/MiryoLove Web` and configures a filtered access log.
+
+The files under `deploy/` are reference material only; they do not represent the active full configuration and must not be applied without a separate review.
+
+The shared centered header, responsive footer, and RU/EN language switch are present across site pages. The language choice is stored in local storage and restored when navigating between routes.
+
+Core site files:
+
+- `script.js` — project and legal page content, translations, news rendering, and the informational cookie notice.
+- `styles.css` — shared layout and responsive styles.
+- `logos/` — local project images and logos.
 
 The homepage project directory includes MiryoLove AI, MiryoLove Server, the planned Git service, MiryoLV, and MiryoLove Retro Gaming. MiryoLV uses the supplied `logos/MiryoLV.jpg` directly.
 
 News are stored in `news.json`; there is no CMS. Add a news entry with `slug`, `status`, ISO `date`, localized `title`, `summary`, `content` paragraph arrays, and a local `image` path or `null`. Only entries with `status: "published"` appear in the archive; the checked-in entry is an empty draft template. Published entries require complete Russian and English content and a real date. Article pages use `/news-article.html?slug=<slug>`.
 
-The shared centered header, responsive footer, and RU/EN language switch are present across site pages. The language choice is stored in local storage and restored when navigating between routes. Project and legal page content, translations, news rendering, and the informational cookie notice are kept in `script.js`; shared layout and responsive styles are in `styles.css`.
-
-## Run locally
+## Local Development
 
 From this directory, start Python's built-in static server:
+
+```sh
+cd "/mnt/Manchild/Project/MiryoLove/MiryoLove Web"
+```
 
 ```sh
 python3 -m http.server 8000
 ```
 
-Then open <http://localhost:8000>. Python's server supports the directory-index routes in this site, but does not implement the custom Caddy HTTP 404 behavior.
+Then open <http://localhost:8000>.
 
-The interface defaults to English and stores the selected Russian or English language in local storage, including when navigating between pages. A bilingual, informational cookie notice remembers dismissal only for the current tab session; it does not ask for or record consent. The reviewed source does not access `document.cookie`; a separate check found no `Set-Cookie` header in the checked GET responses on 7 November 2026. That HTTP check does not cover every route or request method. See `/cookies/` and `docs/` for the cookie policy and technical audits. Project URLs are shown as unverified unless their availability has been confirmed.
+**Local server limitations:** Python's server supports the directory-index routes in this site, but does not implement the custom Caddy HTTP 404 behavior.
 
-The personal data operator is identified in the privacy policy as Bogdan Igorevich Melnikov. That policy lists `bonjour.1958@mail.ru` as the primary contact for personal-data matters and `aloha.778343@gmail.com` as an additional address; the operator's postal address is not provided. Hosting-provider logging, retention, and recipients are not confirmed. The technical 152-FZ checklist is in `docs/152-FZ_TECHNICAL_AUDIT.md`; it does not establish legal compliance or replace legal review.
+## Languages & Cookies
+
+The interface defaults to English.
+
+The language choice is stored in local storage and restored when navigating between pages.
+
+A bilingual, informational cookie notice remembers dismissal only for the current tab session; it does not ask for or record consent.
+
+The reviewed source does not access `document.cookie`; a separate check found no `Set-Cookie` header in the checked GET responses on 7 November 2026.
+
+That HTTP check does not cover every route or request method.
+
+See also:
+
+- `/cookies/` — cookie policy.
+- `/documents/` — project documents and technical materials.
+
+Project URLs are shown as unverified unless their availability has been confirmed.
+
+## Privacy & Personal Data
+
+The personal data operator is identified in the privacy policy as Bogdan Igorevich Melnikov.
+
+That policy lists `bonjour.1958@mail.ru` as the primary contact for personal-data matters and `aloha.778343@gmail.com` as an additional address; the operator's postal address is not provided.
+
+Hosting-provider logging, retention, and recipients are not confirmed.
+
+Technical compliance checklist notes and related materials are available under `/documents/` and `/privacy-policy/`; they do not establish legal compliance or replace legal review.
+
+## License
+
+This project is distributed under the **GNU General Public License v3.0 (GPL-3.0)**.
+
+The full license text is in `LICENSE`.
+
+Third-party libraries, dependencies, and other external materials may remain distributed under their respective licenses.
