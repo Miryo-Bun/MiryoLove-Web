@@ -1,0 +1,116 @@
+<!doctype html>
+<!-- Copyright © 2026 Bogdan Melnikov. -->
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Проекты MiryoLove в области программного обеспечения, искусственного интеллекта и открытых технологий." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://miryolove.org/projects/" />
+    <meta property="og:title" content="Проекты | MiryoLove" />
+    <meta property="og:description" content="Проекты MiryoLove в области программного обеспечения, искусственного интеллекта и открытых технологий." />
+    <meta property="og:image" content="https://miryolove.org/logos/MiryoLove.png" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="MiryoLove" />
+    <link rel="canonical" href="https://miryolove.org/projects/" />
+    <link rel="icon" type="image/png" href="/logos/MiryoLove.png" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Проекты | MiryoLove</title>
+  </head>
+  <body data-page-title-key="projectsPageTitle" data-page-description-key="projectsPageDescription">
+    <a class="skip-link" href="#main" data-i18n="skip">Перейти к содержимому</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="header-center-group">
+          <a class="brand" href="/" aria-label="MiryoLove"><img src="/logos/MiryoLove.png" alt="" width="42" height="42" /><span class="brand-name">MiryoLove</span></a>
+          <nav class="navigation" id="primary-navigation" aria-label="Основная навигация" data-i18n-aria-label="mainNav">
+            <a href="/projects/" data-main-nav="projects" data-i18n="navProjects">Проекты</a>
+            <a href="/news/" data-main-nav="news" data-i18n="navNews">Новости</a>
+            <a href="/about/" data-main-nav="about" data-i18n="navAbout">О проекте</a>
+            <a href="/principles/" data-main-nav="principles" data-i18n="navPrinciples">Принципы</a>
+          </nav>
+        </div>
+        <div class="header-actions">
+          <div class="language-switch" role="group" aria-label="Язык сайта" data-i18n-aria-label="language">
+            <button type="button" class="language-button" data-language="ru" aria-pressed="false">RU</button>
+            <button type="button" class="language-button" data-language="en" aria-pressed="false">EN</button>
+          </div>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Открыть меню" data-i18n-aria-label="menuOpen"><span></span><span></span></button>
+      </div>
+    </header>
+    <main id="main" class="projects-page section-shell">
+      <section class="page-intro" aria-labelledby="projects-title">
+        <p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="projectsEyebrow">Экосистема проекта</span></p>
+        <h1 id="projects-title" data-i18n="projectsTitle">Проекты MiryoLove</h1>
+        <p class="section-intro" data-i18n="projectsIntro">Разные направления — одна цель: делать полезные технологии понятнее и доступнее.</p>
+      </section>
+      <div class="project-filters" role="group" aria-label="Фильтр проектов" data-i18n-aria-label="filterProjects">
+        <button type="button" class="project-filter is-active" data-project-filter="all" aria-pressed="true" data-i18n="filterAll">Все</button>
+        <button type="button" class="project-filter" data-project-filter="development" aria-pressed="false" data-i18n="filterDevelopment">В разработке</button>
+        <button type="button" class="project-filter" data-project-filter="planned" aria-pressed="false" data-i18n="filterPlanned">Запланировано</button>
+        <button type="button" class="project-filter" data-project-filter="available" aria-pressed="false" data-i18n="filterAvailable">Доступно</button>
+      </div>
+      <div class="project-grid">
+        <article class="project-card project-card-ai" data-project-status="available">
+          <div class="project-image-wrap"><img src="/logos/miryolove-ai.jpg" alt="Логотип MiryoLove AI" data-i18n-alt="altAiLogo" width="1872" height="544" loading="lazy" /><span class="project-index">01</span></div>
+          <div class="project-card-content">
+            <div class="project-title-line"><h2>MiryoLove AI</h2><span class="status status-available" data-i18n="aiStatusAvailable">Доступна</span></div>
+            <p data-i18n="aiDescription">Независимый проект в области искусственного интеллекта и разработки собственного AI-ассистента.</p>
+            <div class="project-card-actions">
+              <a class="button button-secondary project-card-button" href="/miryolove-ai/"><span data-i18n="projectDetails">Подробнее</span></a>
+              <a class="button button-primary project-card-button" href="https://huggingface.co/MiryoBun/MiryoLove-7B" target="_blank" rel="noopener noreferrer"><span data-i18n="openAi">Перейти к модели</span><span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card project-card-server" data-project-status="available">
+          <div class="project-image-wrap"><img src="/logos/miryolove-server.jpg" alt="Логотип MiryoLove Server" data-i18n-alt="altServerLogo" width="1183" height="397" loading="lazy" /><span class="project-index">02</span></div>
+          <div class="project-card-content">
+            <div class="project-title-line"><h2><a href="https://github.com/Miryo-Bun/MiryoLove-Server" target="_blank" rel="noopener noreferrer">MiryoLove Server</a></h2><span class="status status-available" data-i18n="serverStatusAvailable">Доступен</span></div>
+            <p data-i18n="serverDescription">MiryoLove Server — серверная часть инфраструктуры MiryoLove. Проект предназначен для обеспечения серверных функций, обработки запросов и взаимодействия компонентов экосистемы.</p>
+            <div class="project-card-actions">
+              <a class="button button-secondary project-card-button" href="/miryolove-server/"><span data-i18n="projectDetails">Подробнее</span></a>
+              <a class="button button-primary project-card-button" href="https://github.com/Miryo-Bun/MiryoLove-Server" target="_blank" rel="noopener noreferrer"><span data-i18n="serverProjectLink">Перейти к MiryoLove Server</span><span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card project-card-miryolv" data-project-status="development">
+          <div class="project-image-wrap"><img src="/logos/MiryoLV.jpg" alt="Логотип MiryoLV" data-i18n-alt="altMiryoLvLogo" width="1936" height="528" loading="lazy" /><span class="project-index">03</span></div>
+          <div class="project-card-content">
+            <div class="project-title-line"><h2>MiryoLV</h2><span class="status status-development" data-i18n="statusDevelopment">В разработке</span></div>
+            <p data-i18n="miryolvDescription">MiryoLV — независимая система контроля версий, написанная на Go. Проект предназначен для управления исходным кодом, отслеживания изменений и работы с историей разработки.</p>
+          </div>
+        </article>
+        <article class="project-card project-card-retro" data-project-status="available">
+          <div class="project-image-wrap retro-project-art" aria-hidden="true"><span class="retro-art-label">RETRO<br />GAMING</span><span class="project-index">04</span></div>
+          <div class="project-card-content">
+            <div class="project-title-line"><h2>MiryoLove Retro Gaming</h2></div>
+            <p data-i18n="retroGamingDescription">MiryoLove Retro Gaming — проект, посвящённый классическим компьютерным и видеоиграм, игровой истории и сохранению наследия ретро-гейминга.</p>
+            <div class="project-card-actions"><a class="button button-primary project-card-button" href="https://github.com/Miryo-Bun/MiryoLove-Retro-Gaming" target="_blank" rel="noopener noreferrer"><span data-i18n="retroGamingLink">Перейти к проекту</span><span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+        <article class="project-card project-card-git" data-project-status="planned">
+          <div class="project-image-wrap git-project-art" aria-hidden="true"><span class="git-project-art-label" data-i18n="gitArtLabel">Будущее направление</span><span class="project-index">05</span></div>
+          <div class="project-card-content">
+            <div class="project-title-line"><h2 data-i18n="gitServiceName">Git-сервис</h2><span class="status status-planned" data-i18n="statusPlanned">Запланирован</span></div>
+            <p data-i18n="gitServiceDescription">Идея будущего сервиса для размещения и совместной разработки исходного кода.</p>
+            <div class="project-card-actions"><a class="button button-secondary project-card-button" href="/git-service/"><span data-i18n="projectDetails">Подробнее</span></a></div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-strip section-shell">
+        <span class="footer-copyright" data-i18n="footerCopyright">© 2026 Мельников Богдан. Все права защищены.</span><span class="footer-separator" aria-hidden="true">|</span>
+        <nav class="footer-links" aria-label="Ссылки сайта" data-i18n-aria-label="footerLinksLabel">
+          <a href="/documents/" data-i18n="footerDocuments">Документы</a><span class="footer-separator" aria-hidden="true">|</span>
+          <a class="footer-navigation-link" href="#primary-navigation" data-i18n="footerNavigation">Навигация</a><span class="footer-separator" aria-hidden="true">|</span>
+          <a href="/privacy-policy/" data-i18n="privacyPolicyLink">Политика конфиденциальности</a><span class="footer-separator" aria-hidden="true">|</span>
+          <a href="/terms-of-use/" data-i18n="footerLegalInfo">Правовая информация</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="/script.js" defer></script>
+  </body>
+</html>

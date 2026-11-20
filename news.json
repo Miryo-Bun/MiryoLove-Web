@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "articles": [
+    {
+      "slug": "new-post",
+      "status": "draft",
+      "date": null,
+      "title": {
+        "ru": "",
+        "en": ""
+      },
+      "summary": {
+        "ru": "",
+        "en": ""
+      },
+      "content": {
+        "ru": [],
+        "en": []
+      },
+      "image": null
+    }
+  ]
+}

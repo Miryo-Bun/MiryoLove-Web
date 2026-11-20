@@ -16,16 +16,23 @@ Static, dependency-free MiryoLove website. The homepage, project pages, and shar
 
 ## Pages
 
-- `/` — MiryoLove homepage and project directory.
-- `/miryolove-ai/`, `/miryolove-server/`, `/git-service/` — project pages.
+- `/` — concise homepage with featured projects and recent confirmed news.
+- `/projects/` — complete project directory.
+- `/news/` — published news archive; `/news-article.html?slug=...` — full text for a published post.
+- `/about/`, `/principles/`, `/documents/` — project overview, guiding principles, and existing documents.
+- `/miryolove-ai/`, `/miryolove-server/`, `/git-service/` — individual project pages.
 - `/privacy-policy/`, `/cookies/`, `/terms-of-use/` — Russian/English legal information pages.
 - `/changelog/` — confirmed website changes; entries without verified dates are undated.
 - `/philosophy/` — MiryoLove values and approach in Russian and English.
 - Missing routes — branded bilingual not-found page; Caddy is configured to preserve HTTP 404 status.
 
-The HTML files remain the static route sources. The current `/etc/caddy/Caddyfile` points to this site's root at `/mnt/Manchild/Project/MiryoLove/MiryoLove Web` and configures a filtered access log. The files under `deploy/` are reference material only; they do not represent the active full configuration and must not be applied without a separate review.
+The HTML files remain the static route sources. Clean routes are directory indexes (`projects/index.html`, `news/index.html`, and so on) and work with Caddy's file server and Python's built-in static server. The current `/etc/caddy/Caddyfile` points to this site's root at `/mnt/Manchild/Project/MiryoLove/MiryoLove Web` and configures a filtered access log. The files under `deploy/` are reference material only; they do not represent the active full configuration and must not be applied without a separate review.
 
-Project and legal page content, translations, and the informational cookie notice are kept in `script.js`; shared layout and responsive styles are in `styles.css`.
+The homepage project directory includes MiryoLove AI, MiryoLove Server, the planned Git service, MiryoLV, and MiryoLove Retro Gaming. MiryoLV uses the supplied `logos/MiryoLV.jpg` directly.
+
+News are stored in `news.json`; there is no CMS. Add a news entry with `slug`, `status`, ISO `date`, localized `title`, `summary`, `content` paragraph arrays, and a local `image` path or `null`. Only entries with `status: "published"` appear in the archive; the checked-in entry is an empty draft template. Published entries require complete Russian and English content and a real date. Article pages use `/news-article.html?slug=<slug>`.
+
+The shared centered header, responsive footer, and RU/EN language switch are present across site pages. The language choice is stored in local storage and restored when navigating between routes. Project and legal page content, translations, news rendering, and the informational cookie notice are kept in `script.js`; shared layout and responsive styles are in `styles.css`.
 
 ## Run locally
 
@@ -35,7 +42,7 @@ From this directory, start Python's built-in static server:
 python3 -m http.server 8000
 ```
 
-Then open <http://localhost:8000>. Python's server exposes the source `.html` files directly and does not implement clean routes or the custom HTTP 404 behavior.
+Then open <http://localhost:8000>. Python's server supports the directory-index routes in this site, but does not implement the custom Caddy HTTP 404 behavior.
 
 The interface defaults to English and stores the selected Russian or English language in local storage, including when navigating between pages. A bilingual, informational cookie notice remembers dismissal only for the current tab session; it does not ask for or record consent. The reviewed source does not access `document.cookie`; a separate check found no `Set-Cookie` header in the checked GET responses on 7 November 2026. That HTTP check does not cover every route or request method. See `/cookies/` and `docs/` for the cookie policy and technical audits. Project URLs are shown as unverified unless their availability has been confirmed.
 

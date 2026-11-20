@@ -17,15 +17,31 @@ const translations = {
     language: "Язык сайта",
     navHome: "Главная",
     navProjects: "Проекты",
+    navNews: "Новости",
     navAbout: "О проекте",
     navPrinciples: "Принципы",
     navCommunity: "Сообщество",
+    allProjects: "Все проекты",
+    featuredProjectsTitle: "Избранные проекты",
+    projectsPageTitle: "Проекты | MiryoLove",
+    projectsPageDescription: "Проекты MiryoLove в области программного обеспечения, искусственного интеллекта и открытых технологий.",
+    aboutPageTitle: "О проекте | MiryoLove",
+    aboutPageDescription: "О MiryoLove — независимом технологическом проекте в области программного обеспечения, ИИ и открытых технологий.",
+    principlesPageTitle: "Принципы | MiryoLove",
+    principlesPageDescription: "Принципы MiryoLove: свобода программного обеспечения, открытость, независимость, безопасность и уважение к людям.",
+    documentsPageTitle: "Документы | MiryoLove",
+    documentsPageDescription: "Официальные документы и материалы проекта MiryoLove.",
+    documentsEyebrow: "Материалы сайта",
+    documentsLegalGroup: "Правовая информация",
+    documentsProjectGroup: "Документы проекта",
+    licenseDocument: "Лицензия проекта (GPL-3.0)",
     github: "GitHub",
     altMiryoLove: "Логотип MiryoLove",
     altAiLogo: "Логотип MiryoLove AI",
     altServerLogo: "Логотип MiryoLove Server",
+    altMiryoLvLogo: "Логотип MiryoLV",
     heroEyebrow: "Независимый технологический проект",
-    heroDescription: "Создаём программное обеспечение, исследуем возможности искусственного интеллекта и делимся техническими знаниями — открыто и с заботой о людях.",
+    heroDescription: "Независимый технологический проект, посвящённый разработке программного обеспечения, искусственного интеллекта и свободных технологий.",
     ourProjects: "Наши проекты",
     openGithub: "Открыть GitHub",
     heroNote: "Технологии должны расширять возможности людей.",
@@ -54,30 +70,59 @@ const translations = {
     aiStatusAvailable: "Доступна",
     serverStatusAvailable: "Доступен",
     aiDescription: "Независимый проект в области искусственного интеллекта и разработки собственного AI-ассистента.",
-    serverDescription: "Внутренняя серверная инфраструктура и backend-компоненты для проектов MiryoLove.",
+    serverDescription: "MiryoLove Server — серверная часть инфраструктуры MiryoLove. Проект предназначен для обеспечения серверных функций, обработки запросов и взаимодействия компонентов экосистемы.",
+    serverProjectLink: "Перейти к MiryoLove Server",
+    miryolvDescription: "MiryoLV — независимая система контроля версий, написанная на Go. Проект предназначен для управления исходным кодом, отслеживания изменений и работы с историей разработки.",
+    retroGamingDescription: "MiryoLove Retro Gaming — проект, посвящённый классическим компьютерным и видеоиграм, игровой истории и сохранению наследия ретро-гейминга.",
+    retroGamingLink: "Перейти к проекту",
     statusNote: "Доступность внешних адресов не подтверждена.",
+    newsEyebrow: "Новости MiryoLove",
+    newsSectionTitle: "Новости",
+    newsSectionIntro: "Подтверждённые публикации о проектах и развитии MiryoLove.",
+    newsPageTitle: "Новости",
+    newsPageDescription: "Публикации и новости проектов MiryoLove.",
+    newsPageIntro: "Новости публикуются только после подтверждения информации.",
+    newsEmpty: "Опубликованных новостей пока нет.",
+    newsLoadError: "Не удалось загрузить новости. Попробуйте открыть раздел позже.",
+    newsArticleUnavailable: "Эта публикация не найдена или ещё не опубликована.",
+    newsBackToList: "Ко всем новостям",
+    newsReadMore: "Читать далее",
+    allNews: "Все новости",
+    olderNews: "Предыдущая новость",
+    newerNews: "Следующая новость",
+    newsArticlePageTitle: "Публикация",
+    discordCommunityTitle: "MiryoLove Community",
+    discordDescription: "Присоединяйтесь к сообществу MiryoLove в Discord, следите за развитием проектов, обсуждайте технологии и общайтесь с участниками сообщества.",
+    joinDiscord: "Присоединиться к Discord",
     aboutStickerOne: "Открытость",
     aboutStickerTwo: "Для людей",
     aboutEyebrow: "Зачем мы это делаем",
-    aboutTitle: "Технологии — это возможность выбирать.",
+    aboutTitle: "О проекте",
+    aboutLead: "Технологии — это возможность выбирать.",
     aboutParagraphOne: "MiryoLove объединяет разработку программного обеспечения, исследования в области ИИ и работу с техническими знаниями. Мы создаём и изучаем решения, которые помогают людям лучше понимать и использовать технологии.",
     aboutParagraphTwo: "Открытые стандарты, уважение к конфиденциальности и технологическая независимость важны, потому что делают цифровую среду более понятной и гибкой. Мы развиваем проект постепенно и честно говорим о его возможностях.",
     readPrinciples: "Наши принципы",
     principlesEyebrow: "Основа решений",
     principlesTitle: "Принципы, которыми мы руководствуемся",
     principlesIntro: "Это ориентиры развития, а не обещание идеальных или полностью независимых систем.",
-    principleFreedomTitle: "Свобода технологий",
+    principleFreedomTitle: "Свобода программного обеспечения",
     principleFreedomText: "Программное обеспечение должно давать пользователям больше возможностей и контроля.",
+    principleOpenSourceTitle: "Открытый исходный код",
+    principleOpenSourceText: "Открытый код помогает изучать, проверять и развивать технологии.",
     principleStandardsTitle: "Открытые стандарты",
     principleStandardsText: "Совместимость и переносимость помогают выбирать подходящие инструменты.",
     principlePrivacyTitle: "Конфиденциальность",
     principlePrivacyText: "С вниманием относимся к данным и избегаем ненужного их сбора.",
     principleIndependenceTitle: "Независимость",
     principleIndependenceText: "Развиваем собственные решения и инфраструктуру там, где это оправдано.",
-    principleKnowledgeTitle: "Доступность знаний",
-    principleKnowledgeText: "Делимся технической информацией и делаем обучение доступнее.",
+    principleSecurityTitle: "Безопасность",
+    principleSecurityText: "Учитываем безопасность при разработке и обозначаем известные ограничения.",
+    principleKnowledgeTitle: "Доступность технологий",
+    principleKnowledgeText: "Делаем технологии и техническую информацию понятнее и доступнее.",
     principleResponsibilityTitle: "Ответственное развитие",
     principleResponsibilityText: "Проверяем решения, обозначаем ограничения и учитываем возможные последствия.",
+    principleRespectTitle: "Уважение к пользователям",
+    principleRespectText: "Учитываем потребности людей, их выбор и контроль над используемыми технологиями.",
     communityEyebrow: "Следите за развитием",
     communityTitle: "Создаём открыто. Развиваем вместе.",
     communityDescription: "Изучайте проекты, следите за обновлениями и находите материалы MiryoLove на привычных платформах.",
@@ -86,10 +131,11 @@ const translations = {
     telegramDescription: "Новости и общение",
     contactTitle: "Контакты",
     footerContact: "Контакты",
-    closingLabel: "Заключительный блок MiryoLove",
-    closingDescription: "Открытые технологии. Полезные знания. Больше возможностей.",
-    exploreProjects: "Изучить проекты",
     footerDescription: "MiryoLove — независимый проект, создаваемый Мельниковым Богданом.",
+    footerDocuments: "Документы",
+    footerLinksLabel: "Ссылки сайта",
+    footerLegalInfo: "Правовая информация",
+    footerIndependent: "MiryoLove — независимый проект.",
     footerNavigation: "Навигация",
     footerProjects: "Проекты",
     footerElsewhere: "Мы в сети",
@@ -112,9 +158,9 @@ const translations = {
     footerRights: "Создано с заботой о технологиях и людях.",
     footerCopyright: "© 2026 Мельников Богдан. Все права защищены.",
     privacyLinksTitle: "Документы",
-    privacyPolicyLink: "Конфиденциальность",
-    cookiesPolicyLink: "Политика cookies",
-    termsLink: "Условия использования",
+    privacyPolicyLink: "Политика конфиденциальности",
+    cookiesPolicyLink: "Политика использования файлов cookie",
+    termsLink: "Пользовательское соглашение",
     cookieNoticeTitle: "Использование файлов cookie",
     cookieNoticeText: "Код не обращается к document.cookie; Set-Cookie не найден в проверенных GET-ответах отдельных маршрутов. Язык хранится в localStorage, закрытие уведомления — в sessionStorage до конца сессии вкладки. Эти значения не отправляются в запросах. «Понятно» закрывает уведомление.",
     cookieNoticeLink: "Политика использования cookies",
@@ -145,15 +191,31 @@ const translations = {
     language: "Website language",
     navHome: "Home",
     navProjects: "Projects",
+    navNews: "News",
     navAbout: "About",
     navPrinciples: "Principles",
     navCommunity: "Community",
+    allProjects: "All projects",
+    featuredProjectsTitle: "Featured projects",
+    projectsPageTitle: "Projects | MiryoLove",
+    projectsPageDescription: "MiryoLove projects in software, artificial intelligence, and open technologies.",
+    aboutPageTitle: "About | MiryoLove",
+    aboutPageDescription: "About MiryoLove, an independent technology project focused on software, AI, and open technologies.",
+    principlesPageTitle: "Principles | MiryoLove",
+    principlesPageDescription: "MiryoLove principles: software freedom, openness, independence, security, and respect for people.",
+    documentsPageTitle: "Documents | MiryoLove",
+    documentsPageDescription: "Official documents and materials for the MiryoLove project.",
+    documentsEyebrow: "Site resources",
+    documentsLegalGroup: "Legal information",
+    documentsProjectGroup: "Project documents",
+    licenseDocument: "Project license (GPL-3.0)",
     github: "GitHub",
     altMiryoLove: "MiryoLove logo",
     altAiLogo: "MiryoLove AI logo",
     altServerLogo: "MiryoLove Server logo",
+    altMiryoLvLogo: "MiryoLV logo",
     heroEyebrow: "Independent technology project",
-    heroDescription: "We build software, explore the possibilities of artificial intelligence, and share technical knowledge—with openness and care for people.",
+    heroDescription: "An independent technology project focused on software, artificial intelligence, and freedom-respecting technology.",
     ourProjects: "Our projects",
     openGithub: "Explore GitHub",
     heroNote: "Technology should expand what people can do.",
@@ -182,30 +244,59 @@ const translations = {
     aiStatusAvailable: "Available",
     serverStatusAvailable: "Available",
     aiDescription: "An independent artificial intelligence project focused on developing its own AI assistant.",
-    serverDescription: "Internal server infrastructure and backend components supporting MiryoLove projects.",
+    serverDescription: "MiryoLove Server is the server-side part of the MiryoLove infrastructure. It provides server functions, request handling, and interaction between ecosystem components.",
+    serverProjectLink: "Go to MiryoLove Server",
+    miryolvDescription: "MiryoLV is an independent version control system written in Go. It is designed to manage source code, track changes, and work with development history.",
+    retroGamingDescription: "MiryoLove Retro Gaming is a project devoted to classic computer and video games, gaming history, and preserving the legacy of retro gaming.",
+    retroGamingLink: "Go to the project",
     statusNote: "Availability of external addresses has not been confirmed.",
+    newsEyebrow: "MiryoLove news",
+    newsSectionTitle: "News",
+    newsSectionIntro: "Confirmed posts about MiryoLove projects and their development.",
+    newsPageTitle: "News",
+    newsPageDescription: "Posts and news from MiryoLove projects.",
+    newsPageIntro: "News is published only after the information has been confirmed.",
+    newsEmpty: "There are no published news posts yet.",
+    newsLoadError: "News could not be loaded. Please try again later.",
+    newsArticleUnavailable: "This post was not found or has not been published.",
+    newsBackToList: "All news",
+    newsReadMore: "Read more",
+    allNews: "All news",
+    olderNews: "Older post",
+    newerNews: "Newer post",
+    newsArticlePageTitle: "Post",
+    discordCommunityTitle: "MiryoLove Community",
+    discordDescription: "Join the MiryoLove community on Discord, follow project development, discuss technology, and connect with community members.",
+    joinDiscord: "Join Discord",
     aboutStickerOne: "Open by design",
     aboutStickerTwo: "Made for people",
     aboutEyebrow: "Why we do this",
-    aboutTitle: "Technology is the freedom to choose.",
+    aboutTitle: "About MiryoLove",
+    aboutLead: "Technology is the freedom to choose.",
     aboutParagraphOne: "MiryoLove brings together software development, AI research, and technical knowledge. We build and explore solutions that help people better understand and use technology.",
     aboutParagraphTwo: "Open standards, respect for privacy, and technological independence matter because they make the digital environment more understandable and flexible. We grow the project step by step and are candid about its capabilities.",
     readPrinciples: "Our principles",
     principlesEyebrow: "A foundation for decisions",
     principlesTitle: "Principles that guide our work",
     principlesIntro: "These are directions for our work, not a promise of perfect or fully independent systems.",
-    principleFreedomTitle: "Freedom through technology",
+    principleFreedomTitle: "Software freedom",
     principleFreedomText: "Software should give people more capabilities and control.",
+    principleOpenSourceTitle: "Open source",
+    principleOpenSourceText: "Open source makes technology easier to study, review, and develop.",
     principleStandardsTitle: "Open standards",
     principleStandardsText: "Interoperability and portability help people choose the tools that fit.",
     principlePrivacyTitle: "Privacy",
     principlePrivacyText: "We treat data with care and avoid collecting it unnecessarily.",
     principleIndependenceTitle: "Independence",
     principleIndependenceText: "We develop our own solutions and infrastructure where it makes sense.",
-    principleKnowledgeTitle: "Accessible knowledge",
-    principleKnowledgeText: "We share technical information and make learning more accessible.",
+    principleSecurityTitle: "Security",
+    principleSecurityText: "We consider security during development and describe known limitations.",
+    principleKnowledgeTitle: "Accessible technology",
+    principleKnowledgeText: "We make technology and technical information easier to understand and access.",
     principleResponsibilityTitle: "Responsible development",
     principleResponsibilityText: "We examine our solutions, explain limitations, and consider potential consequences.",
+    principleRespectTitle: "Respect for users",
+    principleRespectText: "We consider people's needs, choices, and control over the technology they use.",
     communityEyebrow: "Follow our progress",
     communityTitle: "Built openly. Growing together.",
     communityDescription: "Explore our projects, follow updates, and find MiryoLove materials on familiar platforms.",
@@ -214,10 +305,11 @@ const translations = {
     telegramDescription: "News and conversation",
     contactTitle: "Contact",
     footerContact: "Contact",
-    closingLabel: "MiryoLove closing section",
-    closingDescription: "Open technology. Useful knowledge. More possibilities.",
-    exploreProjects: "Explore projects",
     footerDescription: "MiryoLove is an independent project created by Melnikov Bogdan.",
+    footerDocuments: "Documents",
+    footerLinksLabel: "Site links",
+    footerLegalInfo: "Legal information",
+    footerIndependent: "MiryoLove is an independent project.",
     footerNavigation: "Navigation",
     footerProjects: "Projects",
     footerElsewhere: "Find us online",
@@ -239,10 +331,10 @@ const translations = {
     resourceBreadcrumb: "MiryoLove sections",
     footerRights: "Made with care for technology and people.",
     footerCopyright: "© 2026 Melnikov Bogdan. All rights reserved.",
-    privacyLinksTitle: "Policies",
-    privacyPolicyLink: "Privacy",
+    privacyLinksTitle: "Documents",
+    privacyPolicyLink: "Privacy policy",
     cookiesPolicyLink: "Cookie policy",
-    termsLink: "Terms of use",
+    termsLink: "User agreement",
     cookieNoticeTitle: "Cookie Usage",
     cookieNoticeText: "The code does not access document.cookie; no Set-Cookie header was found in the checked GET responses for selected routes. Language is stored in localStorage and notice dismissal in sessionStorage for the tab session. These values are not sent in requests. “Got it” only dismisses the notice.",
     cookieNoticeLink: "Cookie Policy",
@@ -757,8 +849,34 @@ const resourcePages = {
 const languageButtons = document.querySelectorAll("[data-language]");
 const menuToggle = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".navigation");
+const siteNavigationLinks = document.querySelectorAll(".navigation [data-main-nav]");
+const footerNavigationLink = document.querySelector(".footer-navigation-link");
 const storageKey = "miryolove-language";
 const noticeDismissedStorageKey = "miryolove-cookie-notice-dismissed-v1";
+
+function getActiveNavigationSection() {
+  const path = window.location.pathname.replace(/\/+$/, "") || "/";
+  if (["/projects", "/miryolove-ai", "/miryolove-server", "/git-service"].some((route) => path === route || path.startsWith(`${route}/`))) {
+    return "projects";
+  }
+  if (path === "/news" || path === "/news.html" || path === "/news-article.html") return "news";
+  if (path === "/about") return "about";
+  if (path === "/principles" || path === "/philosophy") return "principles";
+  return "";
+}
+
+function updateSiteNavigation() {
+  const activeSection = getActiveNavigationSection();
+  siteNavigationLinks.forEach((link) => {
+    const isActive = link.dataset.mainNav === activeSection;
+    link.classList.toggle("is-active", isActive);
+    if (isActive) {
+      link.setAttribute("aria-current", "page");
+    } else {
+      link.removeAttribute("aria-current");
+    }
+  });
+}
 
 function getSiteRoot() {
   return document.querySelector("[data-root]")?.dataset.root || "/";
@@ -789,6 +907,21 @@ function closeMenu() {
   navigation.classList.remove("is-open");
   document.body.classList.remove("menu-open");
 }
+
+function openMenu() {
+  if (!menuToggle || !navigation) return;
+  menuToggle.setAttribute("aria-expanded", "true");
+  menuToggle.setAttribute("aria-label", translations[document.documentElement.lang].menuClose);
+  navigation.classList.add("is-open");
+  document.body.classList.add("menu-open");
+}
+
+footerNavigationLink?.addEventListener("click", (event) => {
+  if (!window.matchMedia("(max-width: 1000px)").matches) return;
+  event.preventDefault();
+  openMenu();
+  navigation?.querySelector("a")?.focus({ preventScroll: true });
+});
 
 function initializePrivacyLinks() {
   const footer = document.querySelector(".footer-main");
@@ -1105,7 +1238,7 @@ function renderProjectPage(language) {
     ? `<p class="project-address"><span>${project.addressLabel}:</span> <code>${project.address}</code></p>`
     : "";
   const projectAction = project.action
-    ? `<a class="button button-primary${project.action.disabled ? " button-disabled" : ""}" href="${project.address}"${project.action.disabled ? ' aria-disabled="true" tabindex="-1" data-disabled-link' : ""}>
+    ? `<a class="button button-primary${project.action.disabled ? " button-disabled" : ""}" href="${project.address}" target="_blank" rel="noopener noreferrer"${project.action.disabled ? ' aria-disabled="true" tabindex="-1" data-disabled-link' : ""}>
         <span data-i18n="${project.action.key}">${dictionary[project.action.key]}</span>
       </a>`
     : "";
@@ -1226,6 +1359,7 @@ function setLanguage(language, persist = true) {
   renderProjectPage(language);
   renderLegalPage(language);
   renderResourcePage(language);
+  renderNews(language);
   const socialTitle = document.querySelector('meta[property="og:title"]')?.content || document.title;
   const socialDescription =
     document.querySelector('meta[property="og:description"]')?.content ||
@@ -1248,14 +1382,11 @@ languageButtons.forEach((button) => {
 menuToggle?.addEventListener("click", () => {
   if (!navigation) return;
   const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
-  const nextExpanded = !isExpanded;
-  menuToggle.setAttribute("aria-expanded", String(nextExpanded));
-  menuToggle.setAttribute(
-    "aria-label",
-    translations[document.documentElement.lang][nextExpanded ? "menuClose" : "menuOpen"]
-  );
-  navigation.classList.toggle("is-open", nextExpanded);
-  document.body.classList.toggle("menu-open", nextExpanded);
+  if (isExpanded) {
+    closeMenu();
+  } else {
+    openMenu();
+  }
 });
 
 navigation?.querySelectorAll("a").forEach((link) => {
@@ -1265,6 +1396,285 @@ navigation?.querySelectorAll("a").forEach((link) => {
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") closeMenu();
 });
+
+let newsEntriesPromise;
+
+function validateNewsEntries(payload) {
+  if (!payload || payload.schemaVersion !== 1 || !Array.isArray(payload.articles)) {
+    throw new Error("The news feed must contain schemaVersion 1 and an articles array.");
+  }
+
+  const slugs = new Set();
+  payload.articles.forEach((article) => {
+    if (!article || typeof article !== "object" || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(article.slug)) {
+      throw new Error("Each news entry must have a lowercase URL-safe slug.");
+    }
+    if (slugs.has(article.slug)) throw new Error(`Duplicate news slug: ${article.slug}`);
+    slugs.add(article.slug);
+    if (!["draft", "published"].includes(article.status)) {
+      throw new Error(`Invalid publication status for news entry: ${article.slug}`);
+    }
+    if (article.date !== null && (typeof article.date !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(article.date))) {
+      throw new Error(`News date must be an ISO date or null: ${article.slug}`);
+    }
+    ["ru", "en"].forEach((language) => {
+      if (
+        typeof article.title?.[language] !== "string" ||
+        typeof article.summary?.[language] !== "string" ||
+        !Array.isArray(article.content?.[language]) ||
+        !article.content[language].every((paragraph) => typeof paragraph === "string")
+      ) {
+        throw new Error(`News entry is missing localized content: ${article.slug}`);
+      }
+    });
+    if (article.image !== null) {
+      const imageUrl = new URL(article.image, window.location.origin);
+      if (!article.image.startsWith("/") || article.image.startsWith("//") || imageUrl.origin !== window.location.origin) {
+        throw new Error(`News images must be local site assets: ${article.slug}`);
+      }
+    }
+    if (article.status === "published") {
+      const validDate = new Date(`${article.date}T00:00:00Z`);
+      if (!article.date || Number.isNaN(validDate.getTime()) || validDate.toISOString().slice(0, 10) !== article.date) {
+        throw new Error(`Published news needs a valid publication date: ${article.slug}`);
+      }
+      ["ru", "en"].forEach((language) => {
+        if (
+          !article.title[language].trim() ||
+          !article.summary[language].trim() ||
+          !article.content[language].some((paragraph) => paragraph.trim())
+        ) {
+          throw new Error(`Published news needs a title, summary, and full text in both languages: ${article.slug}`);
+        }
+      });
+    }
+  });
+  return payload.articles;
+}
+
+function loadNewsEntries() {
+  newsEntriesPromise ??= fetch(`${getSiteRoot()}news.json`)
+    .then((response) => {
+      if (!response.ok) throw new Error(`News feed request failed with HTTP ${response.status}.`);
+      return response.json();
+    })
+    .then(validateNewsEntries)
+    .catch((error) => {
+      newsEntriesPromise = undefined;
+      throw error;
+    });
+  return newsEntriesPromise;
+}
+
+function formatNewsDate(date, language) {
+  return new Intl.DateTimeFormat(language === "ru" ? "ru-RU" : "en-US", {
+    dateStyle: "long",
+    timeZone: "UTC"
+  }).format(new Date(`${date}T00:00:00Z`));
+}
+
+function createNewsCard(article, language, dictionary) {
+  const card = document.createElement("article");
+  card.className = "news-card";
+  card.dataset.reveal = "";
+
+  if (article.image) {
+    const media = document.createElement("div");
+    media.className = "news-card-image";
+    const image = document.createElement("img");
+    image.src = article.image;
+    image.alt = "";
+    image.loading = "lazy";
+    media.append(image);
+    card.append(media);
+  } else {
+    const art = document.createElement("div");
+    art.className = "news-card-art";
+    art.setAttribute("aria-hidden", "true");
+    const mark = document.createElement("span");
+    mark.className = "news-card-art-mark";
+    mark.textContent = "✦";
+    art.append(mark);
+    card.append(art);
+  }
+
+  const content = document.createElement("div");
+  content.className = "news-card-content";
+  const date = document.createElement("time");
+  date.dateTime = article.date;
+  date.textContent = formatNewsDate(article.date, language);
+  const title = document.createElement("h3");
+  title.textContent = article.title[language];
+  const summary = document.createElement("p");
+  summary.textContent = article.summary[language];
+  const link = document.createElement("a");
+  link.className = "button button-secondary";
+  link.href = `/news-article.html?slug=${encodeURIComponent(article.slug)}`;
+  link.setAttribute("aria-label", `${dictionary.newsReadMore}: ${article.title[language]}`);
+  const linkText = document.createElement("span");
+  linkText.textContent = dictionary.newsReadMore;
+  const arrow = document.createElement("span");
+  arrow.setAttribute("aria-hidden", "true");
+  arrow.textContent = "→";
+  link.append(linkText, arrow);
+  content.append(date, title, summary, link);
+  card.append(content);
+  return card;
+}
+
+function setNewsMeta(title, description, canonicalUrl) {
+  document.title = title;
+  document.querySelector('meta[name="description"]')?.setAttribute("content", description);
+  document.querySelector('meta[property="og:title"]')?.setAttribute("content", title);
+  document.querySelector('meta[property="og:description"]')?.setAttribute("content", description);
+  document.querySelector('meta[name="twitter:title"]')?.setAttribute("content", title);
+  document.querySelector('meta[name="twitter:description"]')?.setAttribute("content", description);
+  const canonical = document.querySelector('link[rel="canonical"]');
+  if (canonical) canonical.href = canonicalUrl;
+  document.querySelector('meta[property="og:url"]')?.setAttribute("content", canonicalUrl);
+}
+
+function createNewsNavLink(article, label) {
+  const link = document.createElement("a");
+  link.className = "button button-secondary";
+  link.href = `/news-article.html?slug=${encodeURIComponent(article.slug)}`;
+  link.textContent = label;
+  return link;
+}
+
+function renderNewsArticle(main, article, entries, language, dictionary) {
+  const index = entries.indexOf(article);
+  const articleUrl = `${window.location.origin}/news-article.html?slug=${encodeURIComponent(article.slug)}`;
+  const breadcrumb = document.createElement("nav");
+  breadcrumb.className = "project-breadcrumb";
+  breadcrumb.setAttribute("aria-label", dictionary.breadcrumb);
+  const newsLink = document.createElement("a");
+  newsLink.href = "/news.html";
+  newsLink.textContent = dictionary.newsPageTitle;
+  const slash = document.createElement("span");
+  slash.setAttribute("aria-hidden", "true");
+  slash.textContent = "/";
+  const current = document.createElement("span");
+  current.setAttribute("aria-current", "page");
+  current.textContent = article.title[language];
+  breadcrumb.append(newsLink, slash, current);
+
+  const content = document.createElement("article");
+  content.className = "news-article-content glass-panel";
+  content.dataset.reveal = "";
+  const heading = document.createElement("h1");
+  heading.textContent = article.title[language];
+  const date = document.createElement("time");
+  date.className = "news-article-date";
+  date.dateTime = article.date;
+  date.textContent = formatNewsDate(article.date, language);
+  content.append(heading, date);
+  if (article.image) {
+    const image = document.createElement("img");
+    image.className = "news-article-image";
+    image.src = article.image;
+    image.alt = article.title[language];
+    image.loading = "lazy";
+    content.append(image);
+  }
+  const body = document.createElement("div");
+  body.className = "news-article-body";
+  article.content[language].forEach((text) => {
+    const paragraph = document.createElement("p");
+    paragraph.textContent = text;
+    body.append(paragraph);
+  });
+  content.append(body);
+
+  const navigation = document.createElement("nav");
+  navigation.className = "news-article-nav";
+  navigation.setAttribute("aria-label", dictionary.navNews);
+  const olderArticle = entries[index + 1];
+  const newerArticle = entries[index - 1];
+  if (olderArticle) navigation.append(createNewsNavLink(olderArticle, dictionary.olderNews));
+  const backLink = document.createElement("a");
+  backLink.className = "button button-secondary";
+  backLink.href = "/news.html";
+  backLink.textContent = dictionary.newsBackToList;
+  navigation.append(backLink);
+  if (newerArticle) navigation.append(createNewsNavLink(newerArticle, dictionary.newerNews));
+  content.append(navigation);
+
+  main.replaceChildren(breadcrumb, content);
+  setNewsMeta(`${article.title[language]} | MiryoLove`, article.summary[language], articleUrl);
+}
+
+function renderUnavailableNewsArticle(main, dictionary, message = dictionary.newsArticleUnavailable) {
+  const content = document.createElement("article");
+  content.className = "news-article-content glass-panel";
+  const heading = document.createElement("h1");
+  heading.textContent = dictionary.newsArticlePageTitle;
+  const status = document.createElement("p");
+  status.className = "news-error-state";
+  status.setAttribute("role", "status");
+  status.textContent = message;
+  const link = document.createElement("a");
+  link.className = "button button-secondary";
+  link.href = "/news.html";
+  link.textContent = dictionary.newsBackToList;
+  content.append(heading, status, link);
+  main.replaceChildren(content);
+  setNewsMeta(
+    `${dictionary.newsArticlePageTitle} | MiryoLove`,
+    dictionary.newsPageDescription,
+    `${window.location.origin}/news-article.html`
+  );
+}
+
+async function renderNews(language) {
+  const lists = document.querySelectorAll("[data-news-list]");
+  const articleMain = document.querySelector("[data-news-article]");
+  if (!lists.length && !articleMain) return;
+
+  const dictionary = translations[language];
+  try {
+    const allEntries = await loadNewsEntries();
+    if (document.documentElement.lang !== language) return;
+    const publishedEntries = allEntries
+      .filter((entry) => entry.status === "published")
+      .sort((left, right) => right.date.localeCompare(left.date));
+
+    if (articleMain) {
+      const slug = new URLSearchParams(window.location.search).get("slug");
+      const article = publishedEntries.find((entry) => entry.slug === slug);
+      if (article) {
+        renderNewsArticle(articleMain, article, publishedEntries, language, dictionary);
+        initializeReveal();
+      } else {
+        renderUnavailableNewsArticle(articleMain, dictionary);
+      }
+      return;
+    }
+
+    lists.forEach((list) => {
+      const limit = list.dataset.newsList === "featured" ? 3 : publishedEntries.length;
+      const entries = publishedEntries.slice(0, limit);
+      list.replaceChildren(...entries.map((entry) => createNewsCard(entry, language, dictionary)));
+      const parent = list.parentElement;
+      const emptyState = parent?.querySelector("[data-news-empty]");
+      const errorState = parent?.querySelector("[data-news-error]");
+      if (emptyState) emptyState.hidden = entries.length > 0;
+      if (errorState) errorState.hidden = true;
+    });
+    if (publishedEntries.length) initializeReveal();
+  } catch (error) {
+    console.error("Could not load the MiryoLove news feed.", error);
+    lists.forEach((list) => {
+      list.replaceChildren();
+      const parent = list.parentElement;
+      const emptyState = parent?.querySelector("[data-news-empty]");
+      const errorState = parent?.querySelector("[data-news-error]");
+      if (emptyState) emptyState.hidden = true;
+      if (errorState) errorState.hidden = false;
+    });
+    if (articleMain) renderUnavailableNewsArticle(articleMain, dictionary, dictionary.newsLoadError);
+  }
+}
 
 function initializeProjectFilters() {
   const filterButtons = document.querySelectorAll("[data-project-filter]");
@@ -1312,7 +1722,7 @@ function initializeProjectFilters() {
 let revealObserver;
 function initializeReveal() {
   const candidates = document.querySelectorAll(
-    ".hero-copy, .hero-art, .section-heading, .project-card, .about-copy, .about-visual, .principle-card, .community-link, .closing-section, .project-detail-art, .project-screenshot, .project-detail-block, .detail-feature-card, .changelog-entry, .philosophy-card"
+    ".hero-copy, .hero-art, .section-heading, .page-intro, .project-card, .news-card, .news-article-content, .about-copy, .about-page-copy, .about-page-visual, .about-visual, .principle-card, .community-link, .document-link, .project-detail-art, .project-screenshot, .project-detail-block, .detail-feature-card, .changelog-entry, .philosophy-card"
   );
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (prefersReducedMotion || !("IntersectionObserver" in window)) {
@@ -1346,4 +1756,5 @@ document.querySelectorAll("#current-year, .current-year").forEach((element) => {
   element.textContent = String(new Date().getFullYear());
 });
 setLanguage(getSavedLanguage(), false);
+updateSiteNavigation();
 initializeCookieNotice();

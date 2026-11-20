@@ -12,7 +12,7 @@ Third-party libraries, dependencies, and other external materials remain distrib
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#faf9ff" />
+    <meta name="theme-color" content="#ffffff" />
     <meta name="robots" content="noindex, nofollow" />
     <meta name="description" content="Страница не найдена. Вернитесь на главную MiryoLove или посмотрите проекты." />
     <meta property="og:type" content="website" />
@@ -25,18 +25,22 @@ Third-party libraries, dependencies, and other external materials remain distrib
   </head>
   <body data-page-title-key="notFoundTitle" data-page-description-key="notFoundDescription">
     <a class="skip-link" href="#main" data-i18n="skip">Перейти к содержимому</a>
-    <main id="main" class="not-found-page" data-root="/">
-      <header class="not-found-header">
-        <a class="brand" href="/" aria-label="MiryoLove">
-          <img src="/logos/MiryoLove.png" alt="" width="44" height="44" />
-          <span class="brand-name">MiryoLove</span>
-        </a>
-        <div class="language-switch" role="group" aria-label="Язык сайта" data-i18n-aria-label="language">
-          <button type="button" class="language-button is-active" data-language="ru" aria-pressed="true">RU</button>
-          <button type="button" class="language-button" data-language="en" aria-pressed="false">EN</button>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="header-center-group">
+          <a class="brand" href="/" aria-label="MiryoLove"><img src="/logos/MiryoLove.png" alt="" width="42" height="42" /><span class="brand-name">MiryoLove</span></a>
+          <nav class="navigation" id="primary-navigation" aria-label="Основная навигация" data-i18n-aria-label="mainNav">
+            <a href="/projects/" data-main-nav="projects" data-i18n="navProjects">Проекты</a>
+            <a href="/news/" data-main-nav="news" data-i18n="navNews">Новости</a>
+            <a href="/about/" data-main-nav="about" data-i18n="navAbout">О проекте</a>
+            <a href="/principles/" data-main-nav="principles" data-i18n="navPrinciples">Принципы</a>
+          </nav>
         </div>
-      </header>
-
+        <div class="header-actions"><div class="language-switch" role="group" aria-label="Язык сайта" data-i18n-aria-label="language"><button type="button" class="language-button" data-language="ru" aria-pressed="false">RU</button><button type="button" class="language-button" data-language="en" aria-pressed="false">EN</button></div></div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Открыть меню" data-i18n-aria-label="menuOpen"><span></span><span></span></button>
+      </div>
+    </header>
+    <main id="main" class="not-found-page" data-root="/">
       <section class="not-found-panel" aria-labelledby="not-found-title">
         <span class="not-found-code" aria-hidden="true">404</span>
         <p class="not-found-eyebrow">MiryoLove</p>
@@ -44,10 +48,21 @@ Third-party libraries, dependencies, and other external materials remain distrib
         <p class="not-found-description" data-i18n="notFoundText">Похоже, такой страницы нет или она была перемещена.</p>
         <div class="not-found-actions">
           <a class="button button-primary" href="/" data-i18n="notFoundHome">На главную</a>
-          <a class="button button-secondary" href="/#projects" data-i18n="notFoundProjects">К проектам</a>
+          <a class="button button-secondary" href="/projects/" data-i18n="notFoundProjects">К проектам</a>
         </div>
       </section>
     </main>
+    <footer class="site-footer">
+      <div class="footer-strip section-shell">
+        <span class="footer-copyright" data-i18n="footerCopyright">© 2026 Мельников Богдан. Все права защищены.</span><span class="footer-separator" aria-hidden="true">|</span>
+        <nav class="footer-links" aria-label="Ссылки сайта" data-i18n-aria-label="footerLinksLabel">
+          <a href="/documents/" data-i18n="footerDocuments">Документы</a><span class="footer-separator" aria-hidden="true">|</span>
+          <a class="footer-navigation-link" href="#primary-navigation" data-i18n="footerNavigation">Навигация</a><span class="footer-separator" aria-hidden="true">|</span>
+          <a href="/privacy-policy/" data-i18n="privacyPolicyLink">Политика конфиденциальности</a><span class="footer-separator" aria-hidden="true">|</span>
+          <a href="/terms-of-use/" data-i18n="footerLegalInfo">Правовая информация</a>
+        </nav>
+      </div>
+    </footer>
     <script src="/script.js" defer></script>
   </body>
 </html>
