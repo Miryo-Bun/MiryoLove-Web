@@ -83,8 +83,6 @@ Project URLs are shown as unverified unless their availability has been confirme
 
 ## Privacy & Personal Data
 
-The personal data operator is identified in the privacy policy as Bogdan Igorevich Melnikov.
-
 That policy lists `bonjour.1958@mail.ru` as the primary contact for personal-data matters and `aloha.778343@gmail.com` as an additional address; the operator's postal address is not provided.
 
 Hosting-provider logging, retention, and recipients are not confirmed.
